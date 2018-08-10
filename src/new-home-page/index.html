@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Meu Patrocínio</title>
-
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
@@ -13,75 +13,101 @@
 
 	<header>
 		<link rel="stylesheet" href="assets/style/header.css">
-		<div class="container-fluid hero">
 
+		<div class="container-fluid hero d-flex align-items-start flex-column">
 
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<div class="container">
-					<a class="navbar-brand" href="#">
-						<img src="assets/img/logo/meu-patrocinio.svg" class="logo-header" alt="Meu Patrocínio">
-					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-mp" aria-controls="navbars-mp" aria-expanded="false" aria-label="Trocar navegação">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+			<div class="container mb-auto">
+				<nav class="navbar navbar-expand-lg navbar-dark p-0">
+					<div class="container d-flex p-0">
+						<a class="navbar-brand pt-4" href="#">
+							<img src="assets/img/logo/meu-patrocinio.svg" class="logo-header" alt="Meu Patrocínio">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-mp" aria-controls="navbars-mp" aria-expanded="false" aria-label="Trocar navegação">
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-					<div class="collapse navbar-collapse flex-row-reverse" id="navbars-mp">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="dropdown-sugar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sugar</a>
-								<div class="dropdown-menu" aria-labelledby="dropdown-sugar">
-									<a class="dropdown-item" href="#">Sugar Baby</a>
-									<a class="dropdown-item" href="#">Sugar Daddy</a>
-									<a class="dropdown-item" href="#">Sugar Mommy</a>
-									<a class="dropdown-item" href="#">Relacionamento Sugar</a>
-								</div>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Como Funciona <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Sobre nós</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Blog</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Imprensa</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Login</a>
-							</li>
-							<li class="nav-item">
-								<a class="btn btn-primary" href="#" role="button">Cadastre-se</a>
-							</li>
-						</ul>
+						<div class="collapse navbar-collapse pt-4 mr-auto justify-content-end" id="navbars-mp">
+							<ul class="navbar-nav">
+								<li class="nav-item dropdown pr-3">
+									<a class="nav-link dropdown-toggle" href="#" id="dropdown-sugar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sugar</a>
+									<div class="dropdown-menu" aria-labelledby="dropdown-sugar">
+										<a class="dropdown-item" href="#">Sugar Baby</a>
+										<a class="dropdown-item" href="#">Sugar Daddy</a>
+										<a class="dropdown-item" href="#">Sugar Mommy</a>
+										<a class="dropdown-item" href="#">Relacionamento Sugar</a>
+									</div>
+								</li>
+								<li class="nav-item active pr-3">
+									<a class="nav-link" href="#">Como Funciona <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item pr-3">
+									<a class="nav-link" href="#">Sobre nós</a>
+								</li>
+								<li class="nav-item pr-3">
+									<a class="nav-link" href="#">Blog</a>
+								</li>
+								<li class="nav-item pr-3">
+									<a class="nav-link" href="#">Imprensa</a>
+								</li>
+								<li class="nav-item pr-3">
+									<a class="nav-link" href="#">Login</a>
+								</li>
+								<li class="nav-item pr-3">
+									<a class="btn btn-primary btn-sign-in-menu p-2" href="#" role="button">Cadastre-se</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</nav>
-
-			<div class="container">
-
-
-			<div class="hero-text">A Maior Rede Sugar do Brasil <br>
-				Mulheres Lindas, Homens Ricos</div>
-				<p class="text-left"></p>
-				<a class="btn btn-primary" href="#" role="button">Cadastre-se</a>
-
-
+				</nav>
 			</div>
+
+			<div class="container pb-5">
+				<div class="hero-main-text pb-2">A Maior Rede Sugar do Brasil</div>
+				<div class="hero-sub-text pb-3">Mulheres Lindas, Homens Ricos</div>
+				<a class="btn btn-primary btn-sign-in p-3" href="#" role="button">Cadastre-se</a>
 			</div>
-		</header>
+		</div>
+	</header>
 
-		<main>
+	<main>
 
-		</main>
+		<div class="container media pt-5 pb-5 d-xl-flex d-sm-flex flex-sm-row flex-xl-row justify-content-xl-around justify-content-sm-around">
+			<div class="row">
+			<picture class="d-block p-3">
+				<source media="(min-width: 1200px)" srcset="assets/img/media/globo@2x.jpg" />
+				<img src="assets/img/media/globo.jpg" class="globo" alt="Globo" style="width:auto;" />
+			</picture>
+			<picture class="d-block p-3">
+				<source media="(min-width: 1200px)" srcset="assets/img/media/forbes@2x.jpg" />
+				<img src="assets/img/media/forbes.jpg" class="forbes" alt="Forbes" style="width:auto;" />
+			</picture>
+			<picture class="d-block p-3">
+				<source media="(min-width: 1200px)" srcset="assets/img/media/trip@2x.jpg" />
+				<img src="assets/img/media/trip.jpg" class="trip" alt="Trip" style="width:auto;" />
+			</picture>
+			<picture class="d-block p-3">
+				<source media="(min-width: 1200px)" srcset="assets/img/media/redetv@2x.jpg" />
+				<img src="assets/img/media/redetv.jpg" class="redetv" alt="Rede TV" style="width:auto;" />
+			</picture>
+			<picture class="d-block p-3">
+				<source media="(min-width: 1200px)" srcset="assets/img/media/yahoo@2x.jpg" />
+				<img src="assets/img/media/yahoo.jpg" class="yahoo" alt="Yahoo" style="width:auto;" />
+			</picture>
+			<picture class="d-block p-3">
+				<source media="(min-width: 1200px)" srcset="assets/img/media/gnt@2x.jpg" />
+				<img src="assets/img/media/gnt.jpg" class="gnt" alt="GNT" style="width:auto;" />
+			</picture>
+</div>
+		</div>
 
-		<footer>
+	</main>
 
-		</footer>
+	<footer>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	</body>
-	</html>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
