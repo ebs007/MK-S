@@ -1,0 +1,59 @@
+@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.less';
+/**
+ * -----------------------------------------------------------------------
+ *                                  Button
+ * -----------------------------------------------------------------------
+ */
+.btn-primary {
+    border: 0;
+
+    &:hover {
+        color: #fff;
+        background-color: #BF0000;
+        border-color: #BF0000;
+    }
+
+    &.focus, &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(191,0,0,.5);
+    }
+
+}
+
+.btn-sign-in {
+    background-color: #E00C00;
+    width: 240px;
+    height: 50px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    line-height: 18px;
+    border-radius: 6px;
+    border: 0;
+    display: block;
+
+    @media (max-width: @screen-xbs-max) {
+        &{
+            width: 100%;
+        }
+    }
+
+    @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+        &{
+            width: 100%;
+        }
+    }
+
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        &{
+            width: 100%;
+        }
+    }
+
+}
+/**
+ * -----------------------------------------------------------------------
+ *                                Button End
+ * -----------------------------------------------------------------------
+ */
