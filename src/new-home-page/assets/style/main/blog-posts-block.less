@@ -4,7 +4,13 @@
 *                         Block Blog Posts
 * -----------------------------------------------------------------------
 */
-.block-blog-posts{
+.owl-blog-posts .owl-stage-outer{
+    padding-bottom: 10px;
+    height: auto;
+}
+
+#blog-posts{
+
     & .title {
         font-family: 'Lora';
         font-size: 32px;
@@ -17,9 +23,9 @@
     }
     & .blog-post {
         background-color: #fff;
-        padding: 17px 14px;
+        padding: 0;
         border-radius: 8px;
-        // height: 100px;
+        height: auto;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 
         @media (max-width: @screen-xbs-max) {
@@ -42,7 +48,7 @@
 
         @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
             & {
-                width: 270px;
+                width: 220px;
             }
         }
 
@@ -53,8 +59,8 @@
         }
 
         & img {
-            width: 50px!important;
-            height: 48px!important;
+            // width: 50px!important;
+            // height: 48px!important;
         }
 
     }
@@ -66,7 +72,11 @@
         color: #222222;
         // padding-left: 18px;
         text-align: left;
-        height: 70px;
+        // height: 70px;
+    }
+    & .card-body {
+        padding: 14px;
+        height: 90px;
     }
 }
 /**

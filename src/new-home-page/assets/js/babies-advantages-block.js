@@ -1,6 +1,5 @@
-jQuery(document).ready(function($) {
-    $.noConflict();
-    jQuery('.owl-blog-posts').owlCarousel({
+$(document).ready(function() {
+    $('.owl-carousel.owl-babies-advantages').owlCarousel({
         loop:false,
         margin:10,
         responsiveClass:true,
@@ -14,16 +13,16 @@ jQuery(document).ready(function($) {
                 nav:false
             },
             768:{
-                items:1,
+                items:2,
                 nav:false
             },
             992:{
-                items:4,
+                items:3,
                 nav:false,
                 loop:false
             },
             1200:{
-                items:4,
+                items:3,
                 nav:false,
                 loop:false
             }

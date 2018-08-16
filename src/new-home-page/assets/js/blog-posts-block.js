@@ -1,28 +1,31 @@
 $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel.owl-blog-posts').owlCarousel({
         loop:false,
         margin:10,
         responsiveClass:true,
         responsive:{
             0:{
                 items:1,
-                nav:false
+                nav:false,
+                loop:false
             },
             576:{
                 items:1,
-                nav:false
+                nav:false,
+                loop:false
             },
             768:{
-                items:1,
-                nav:false
+                items:2,
+                nav:false,
+                loop:false
             },
             992:{
-                items:3,
+                items:4,
                 nav:false,
                 loop:false
             },
             1200:{
-                items:3,
+                items:4,
                 nav:false,
                 loop:false
             }
