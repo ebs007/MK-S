@@ -47,5 +47,8 @@
 		"website-scraper": "^3.3.2"
 	},
 	"codename": "Platinum Uninorth",
-	"patchname": "Anoa"
+	"patchname": "Anoa",
+	"scripts": {
+		"start": "node runTasks.js"
+	},
 }

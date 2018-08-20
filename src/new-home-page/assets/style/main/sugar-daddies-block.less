@@ -1,13 +1,15 @@
 @import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.less';
 /**
 * -----------------------------------------------------------------------
-*                            Block Sugar daddies
+*                           Sugar Daddies Block
 * -----------------------------------------------------------------------
 */
-.block-sugar-daddies {
+#sugar-daddies {
 
 	@media (max-width: @screen-xbs-max) {
-		// padding-bottom: 50px!important;
+		& {
+			// padding-bottom: 50px!important;
+		}
 	}
 
 	@media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
@@ -19,32 +21,46 @@
 	}
 
 	@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-		padding-bottom: 30px!important;
+		& {
+			padding-bottom: 30px!important;
+		}
 	}
 
 	@media (min-width: @screen-lg-min) {
-		padding-bottom: 30px!important;
+		& {
+			padding-bottom: 30px!important;
+		}
 	}
 
-	.col-4.users {
+	& .col-4.users {
 		@media (max-width: @screen-xbs-max) {
-			padding: 4px;
+			& {
+				padding: 4px;
+			}
 		}
 
 		@media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
-			padding: 4px;
+			& {
+				padding: 4px;
+			}
 		}
 
 		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-			padding: 4px;
+			& {
+				padding: 4px;
+			}
 		}
 
 		@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-			padding-bottom: 30px;
+			& {
+				padding-bottom: 30px;
+			}
 		}
 
 		@media (min-width: @screen-lg-min) {
-			padding-bottom: 30px;
+			& {
+				padding-bottom: 30px;
+			}
 		}
 	}
 
@@ -100,6 +116,6 @@
 }
 /**
 * -----------------------------------------------------------------------
-*                          Block Sugar daddies End
+*                         Sugar Daddies Block End
 * -----------------------------------------------------------------------
 */
