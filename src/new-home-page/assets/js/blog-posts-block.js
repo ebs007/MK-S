@@ -1,33 +1,26 @@
 $(document).ready(function() {
     $('.owl-carousel.owl-blog-posts').owlCarousel({
-        loop:false,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
         margin:10,
         responsiveClass:true,
         responsive:{
             0:{
-                items:1,
-                nav:false,
-                loop:false
+                items:1
             },
             576:{
-                items:1,
-                nav:false,
-                loop:false
+                items:1
             },
             768:{
-                items:2,
-                nav:false,
-                loop:false
+                items:2
             },
             992:{
-                items:4,
-                nav:false,
-                loop:false
+                items:4
             },
             1200:{
-                items:4,
-                nav:false,
-                loop:false
+                items:4
             }
         }
     })

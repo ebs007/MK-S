@@ -1,30 +1,27 @@
 $(document).ready(function() {
     $('.owl-carousel.owl-media').owlCarousel({
-        loop:false,
+        nav:false,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
         margin:10,
         responsiveClass:true,
         responsive:{
             0:{
-                items:3,
-                nav:false
+                items:3
             },
             576:{
-                items:3,
-                nav:false
+                items:3
             },
             768:{
-                items:3,
-                nav:false
+                items:3
             },
             992:{
-                items:6,
-                nav:false,
-                loop:false
+                items:6
             },
             1200:{
-                items:6,
-                nav:false,
-                loop:false
+                items:6
             }
         }
     })

@@ -1,30 +1,26 @@
 $(document).ready(function() {
     $('.owl-carousel.owl-daddies-advantages').owlCarousel({
-        loop:false,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
         margin:10,
         responsiveClass:true,
         responsive:{
             0:{
-                items:1,
-                nav:false
+                items:1
             },
             576:{
-                items:1,
-                nav:false
+                items:1
             },
             768:{
-                items:2,
-                nav:false
+                items:2
             },
             992:{
-                items:3,
-                nav:false,
-                loop:false
+                items:3
             },
             1200:{
-                items:3,
-                nav:false,
-                loop:false
+                items:3
             }
         }
     })
