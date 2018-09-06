@@ -1,13 +1,13 @@
-var loadPath = require('../modules/load/loadPath.js');
-var mountFileVar = require('../modules/mount/mountFileVar.js');
-var mountLess = require('../modules/mount/mountLess.js');
+var loadPath = require('../../../lib/loadPath.js');
+var mountFileVar = require('../../../lib/mountFileVar.js');
+var mountLess = require('../modules/mountLess.js');
 
 module.exports.less = function() {
-    var auxLoadPath = loadPath.loadPath('.less');
+    var auxLoadPath = loadPath.loadPath('./src/', ['.less']);
     var auxMountFileVar = mountFileVar.mountFileVar(auxLoadPath);
 
-    for(var index in auxMountFileVar) {
-        mountLess.mountLess(auxMountFileVar[index]);
+    for (var i = 0; i <= auxMountFileVar.length-1; i++) {
+        mountLess.mountLess(auxMountFileVar[i]);
     }
 };
 
