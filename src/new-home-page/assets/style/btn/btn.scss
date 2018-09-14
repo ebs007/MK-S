@@ -1,4 +1,4 @@
-@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.less';
+@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.scss';
 /**
 * -----------------------------------------------------------------------
 *                                  Button
@@ -35,13 +35,13 @@
     align-items: center;
     justify-content: center;
 
-    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
         & {
             width: 240px;
         }
     }
 
-    @media (min-width: @screen-lg-min) {
+    @media (min-width: $screen-lg-min) {
         & {
             width: 240px;
         }
@@ -66,14 +66,14 @@
     align-items: center;
     justify-content: center;
 
-    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
         & {
             width: 124px;
             height: 36px;
         }
     }
 
-    @media (min-width: @screen-lg-min) {
+    @media (min-width: $screen-lg-min) {
         & {
             width: 124px;
             height: 36px;

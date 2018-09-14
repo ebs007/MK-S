@@ -1,4 +1,4 @@
-@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.less';
+@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.scss';
 /**
 * -----------------------------------------------------------------------
 *                             Side Bar Mobile
@@ -89,19 +89,19 @@
         background-color: #1D1617;
     }
 
-    @media (max-width: @screen-xbs-max) {
+    @media (max-width: $screen-xbs-max) {
         & li:last-child a {
             margin-top: 20px;
         }
     }
 
-    @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
         & li:last-child a {
             margin-top: 20px;
         }
     }
 
-    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
         & li:last-child a {
             margin-top: 20px;
         }

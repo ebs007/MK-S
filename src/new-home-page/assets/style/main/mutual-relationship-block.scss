@@ -1,4 +1,4 @@
-@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.less';
+@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.scss';
 /**
 * -----------------------------------------------------------------------
 *                        Mutual Relationship Block
@@ -7,31 +7,31 @@
 #mutual-relationship {
     padding-top: 20px;
 
-    @media (max-width: @screen-xbs-max) {
+    @media (max-width: $screen-xbs-max) {
         // & {
         //     padding-top: 20px;
         // }
     }
 
-    @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
         // & {
         //     padding-top: 20px;
         // }
     }
 
-    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
         // & {
         //     padding-top: 20px;
         // }
     }
 
-    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
         // & {
         //     padding-top: 60px;
         // }
     }
 
-    @media (min-width: @screen-lg-min) {
+    @media (min-width: $screen-lg-min) {
         // & {
         //     padding-top: 60px;
         // }
@@ -73,19 +73,19 @@
         text-align: center;
     }
 
-    @media (max-width: @screen-xbs-max) {
+    @media (max-width: $screen-xbs-max) {
         &{
             // background-image: url('../../img/mutual-relationship/banner-xs.jpg');
         }
     }
 
-    @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
         &{
             // background-image: url('../../img/mutual-relationship/banner-xs@2x.jpg');
         }
     }
 
-    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
         &{
             // background-image: url('../../img/mutual-relationship/banner-xs@3x.jpg');
         }

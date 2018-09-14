@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"browser-sync": "^2.24.6",
+		"clean-css": "^4.2.1",
 		"copy": "^0.3.2",
 		"fs": "^0.0.1-security",
 		"fs-path": "^0.0.24",
@@ -39,10 +40,12 @@
 		"imagemin-mozjpeg": "^7.0.0",
 		"imagemin-pngquant": "^6.0.0",
 		"inline-images": "^1.0.1",
+		"inline-source": "^6.1.8",
 		"inliner": "^1.13.1",
 		"lazy-json": "^0.0.11",
 		"less": "^3.8.1",
 		"merge": "^1.2.0",
+		"node-sass": "^4.9.3",
 		"packagify-html": "^0.0.7",
 		"path": "^0.12.7",
 		"pkg": "^4.3.4",
@@ -58,6 +61,8 @@
 	"codename": "Platinum Uninorth",
 	"patchname": "Anoa",
 	"scripts": {
-		"start": "node runTasks.js"
+		"start": "node runTasks.js",
+		"test": "node runTasks.js && node modules/makeSite/tasks/runTasksLevel2.js",
+		"cssInline": "node modules/makeSite/tasks/runTasksLevel2.js"
 	}
 }

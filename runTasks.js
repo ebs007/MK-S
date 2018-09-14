@@ -46,9 +46,21 @@ cpExt.cpExt('./src/', './build/', ['.svg', '.js', '.css', '.html', '.eot', '.ttf
  * -----------------------------------------------------------------------
  */
 
-// taskLess.less();
-// taskImg.img();
-taskCssInline.cssInline();
+const task = async () => {
+let css = await taskLess.less();
+let img = await taskImg.img();
+let inline = await taskCssInline.cssInline();
+return {
+	'css:':css,
+	'img:':img,
+	'inline': inline
+};
+}
+
+task()
+  .then((valuek) => console.log('SUCCESS', valuek)) // 2 + 3 + 2 + 6 = 13
+  .catch((error) => console.log('FAILURE', error)); // Random error
+// taskCssInline.cssInline();
 
 // bs.watch("src/**/*.css", function (event, file) {
 // 	if (event === "change") {

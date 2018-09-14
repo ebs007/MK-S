@@ -1,4 +1,4 @@
-@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.less';
+@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.scss';
 /**
  * -----------------------------------------------------------------------
  *                                Mobile Bar
@@ -21,7 +21,7 @@
     }
 
     & .navbar-toggler-icon{
-        background-image: url('../../img/menu/menu-hamburguer.png')!important;
+        background-image: url('assets/style/mobile/img/menu/menu-hamburguer.png')!important;
         width: 26px;
         height: 19px;
         margin-top: 16px;
