@@ -1,31 +1,34 @@
 var loadPath = require('../../../lib/loadPath.js');
 var mountFileVar = require('../../../lib/mountFileVar.js');
-// var mountLess = require('../modules/mountLess.js');
-var fs = require('fs-extra');
-var path = require('path');
-var sass = require('node-sass');
-var recursiveReadSync = require('recursive-readdir-sync');
-var mkDir = require('../../../lib/mkDir.js');
-const util = require('util');
+var mountBase64 = require('../modules/mountBase64.js');
+// var fs = require('fs-extra');
+// var path = require('path');
 
-module.exports.less = function() {
+// var recursiveReadSync = require('recursive-readdir-sync');
+// var mkDir = require('../../../lib/mkDir.js');
+// const util = require('util');
+
+module.exports.base64 = async function() {
 	var result = null;
-	var auxLoadPath = loadPath.loadPath('./src/', ['.scss']);
+	var auxLoadPath = loadPath.loadPath(
+		'./build/',
+		['.css']
+	);
 	var auxMountFileVar = mountFileVar.mountFileVar(auxLoadPath);
 	// console.log(auxMountFileVar);
 	// return new Promise((resolve, reject) => {
 	// (async () => {
 	for (var i = 0; i <= auxMountFileVar.length-1; i++) {
-		// result = await mountLess.mountLess(auxMountFileVar[i]);
+		await mountBase64.mountBase64(auxMountFileVar[i]);
 		// result = auxMountFileVar[i].content.toString();
-		console.log('auxMountFileVar[i]:', auxMountFileVar[i].filePath);
-
-
-
-
-
-
-		var options = {};
+		// console.log('auxMountFileVar[i]:', auxMountFileVar[i].filePath);
+		//
+		//
+		//
+		//
+		//
+		//
+		// var options = {};
 		// var result = less.render(fileVar.content, options, function(error, output) {
 		// 	console.log(fileVar.content);
 		// 	console.log('error');
@@ -41,48 +44,55 @@ module.exports.less = function() {
 		// const srcPath = path.join(process.cwd(), auxMountFileVar[i].filePath);
 		// console.log('srcPath:', srcPath);
 		// await less.render(result, options, function(error, output) {
-		const srcPath = path.join(process.cwd(), auxMountFileVar[i].filePath);
-		const dstPath = path.join(process.cwd(), auxMountFileVar[i].auxOnlyDirPath);
-		var result = sass.renderSync({
-				// console.log('result scss:', scss);
-				file: srcPath,
-				data: auxMountFileVar[i].content,
-				outputStyle: 'nested',
-				// outFile: auxMountFileVar[i].auxOnlyDirPath + auxMountFileVar[i].auxOnlyFileName,
-				sourceMap: true, // or an absolute or relative (to outFile) path
-				// importer: function(url, prev, done) {
-				// 	// url is the path in import as is, which LibSass encountered.
-				// 	// prev is the previously resolved path.
-				// 	// done is an optional callback, either consume it or return value synchronously.
-				// 	// this.options contains this options hash
-				// 	someAsyncFunction(url, prev, function(result){
-				// 		done({
-				// 			file: result.path, // only one of them is required, see section Special Behaviours.
-				// 			contents: result.data
-				// 		});
-				// 	});
-				// 	// OR
-				// 	var result = someAsyncFunction(url, prev);
-				// 	return {file: result.path, contents: result.data};
-				// }
-			});
+// 		const srcPath = path.join(process.cwd(), auxMountFileVar[i].filePath);
+// 		const dstPath = path.join(process.cwd(), auxMountFileVar[i].auxOnlyDirPath);
+// 		var result = sass.renderSync({
+// 				// console.log('result scss:', scss);
+// 				file: srcPath,
+// 				data: auxMountFileVar[i].content,
+// 				outputStyle: 'nested',
+// 				// outFile: auxMountFileVar[i].auxOnlyDirPath + auxMountFileVar[i].auxOnlyFileName,
+// 				sourceMap: true, // or an absolute or relative (to outFile) path
+// 				// importer: function(url, prev, done) {
+// 				// 	// url is the path in import as is, which LibSass encountered.
+// 				// 	// prev is the previously resolved path.
+// 				// 	// done is an optional callback, either consume it or return value synchronously.
+// 				// 	// this.options contains this options hash
+// 				// 	someAsyncFunction(url, prev, function(result){
+// 				// 		done({
+// 				// 			file: result.path, // only one of them is required, see section Special Behaviours.
+// 				// 			contents: result.data
+// 				// 		});
+// 				// 	});
+// 				// 	// OR
+// 				// 	var result = someAsyncFunction(url, prev);
+// 				// 	return {file: result.path, contents: result.data};
+// 				// }
+// 			});
+//
+// 		console.log(result);
+// 			console.log(result.css);
+// 			console.log(result.map);
+// 			console.log(result.stats);
+//
+// 			mkDir.mkDir(auxMountFileVar[i].auxOnlyDirPath);
+// 			auxMountFileVar[i].auxOnlyFileName = auxMountFileVar[i].auxOnlyFileName.replace('scss', 'css');
+// 			fs.writeFileSync(auxMountFileVar[i].auxOnlyDirPath + auxMountFileVar[i].auxOnlyFileName, result.css);
+//
+//
+//
+//
+//
+//
+//
+// console.log('dir:',dstPath + auxMountFileVar[i].auxOnlyFileName);
 
-		console.log(result);
-			console.log(result.css);
-			console.log(result.map);
-			console.log(result.stats);
-
-			mkDir.mkDir(auxMountFileVar[i].auxOnlyDirPath);
-			auxMountFileVar[i].auxOnlyFileName = auxMountFileVar[i].auxOnlyFileName.replace('scss', 'css');
-			fs.writeFileSync(auxMountFileVar[i].auxOnlyDirPath + auxMountFileVar[i].auxOnlyFileName, result.css);
 
 
 
 
 
 
-
-console.log('dir:',dstPath + auxMountFileVar[i].auxOnlyFileName);
 		// sass.render({
 		// 	file: srcPath,
 		// 	data: auxMountFileVar[i].content,
@@ -140,7 +150,7 @@ console.log('dir:',dstPath + auxMountFileVar[i].auxOnlyFileName);
 		// output.map = string of sourcemap
 		// output.imports = array of string filenames of the imports referenced
 		// return new Promise((resolve, reject) => {
-		// console.log('less mountLess.js:', auxMountFileVar[i]);
+		// console.log('less mountSass.js:', auxMountFileVar[i]);
 		// console.log(output);
 		// mkDir.mkDir(auxMountFileVar[i].auxOnlyDirPath);
 		// auxMountFileVar[i].auxOnlyFileName = auxMountFileVar[i].auxOnlyFileName.replace('less', 'css');
@@ -186,5 +196,5 @@ console.log('dir:',dstPath + auxMountFileVar[i].auxOnlyFileName);
 	// });
 };
 
-// var lessTest = require('./Less.js');
+// var lessTest = require('./Sass.js');
 // lessTest.less();

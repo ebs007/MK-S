@@ -1,17 +1,15 @@
 var fs = require('fs');
-var packagify = require('packagify-html');
 var recursiveReadSync = require('recursive-readdir-sync');
 var mkDir = require('../../../lib/mkDir.js');
 var checkExist = require('../../../lib/checkExist.js');
-var Inliner = require('inliner');
 var CleanCSS = require('clean-css');
 const { inlineSource } = require('inline-source');
 const path = require('path');
 
 module.exports.mountCssInline = async function (fileVar) {
-    const htmlpath = path.resolve('project/src/html/index.html');
-    console.log('fileVar.filePath:', path.resolve(fileVar.filePath));
-    console.log('pathresolve:', htmlpath);
+    // const htmlpath = path.resolve('project/src/html/index.html');
+    // console.log('fileVar.filePath:', path.resolve(fileVar.filePath));
+    // console.log('pathresolve:', htmlpath);
     // 	var opts = {
     //     scripts: true, 	/// (default: true) package scripts
     //     styles: true, 	/// (default: true)	package styles
@@ -46,15 +44,17 @@ module.exports.mountCssInline = async function (fileVar) {
       html = await inlineSource(fileVar.auxOnlyDirPath + fileVar.auxOnlyFileName, {
           compress: true,
               rootpath: path.resolve('build/new-home-page'),
-              tag: 'source'
+              // tag: 'source'
         // Skip all css types and png formats
         // ignore: ['css', 'png']
       });
-      console.log('html: ', html);
+      // console.log('html: ', html);
+
       fs.writeFileSync(fileVar.auxOnlyDirPath + fileVar.auxOnlyFileName, html);
+      console.log('Css and Image inline: ', fileVar.auxOnlyDirPath + fileVar.auxOnlyFileName);
       // Do something with html
     } catch(err) {
-        console.log('error inline: ', err);
+        console.log('File inline error: ', err);
       // Handle error
     }
 

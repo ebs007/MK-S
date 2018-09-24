@@ -9,6 +9,15 @@
     height: auto;
 }
 #babies-advantages{
+
+    & .cls-1 {
+        fill: #fff;
+    }
+
+    & .cls-2 {
+        fill: #e00c00;
+    }
+
     & .title {
         font-family: 'lorabold';
         font-size: 32px;

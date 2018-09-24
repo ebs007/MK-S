@@ -1,12 +1,15 @@
 {
-	"name": "presell",
-	"version": "1.0.6",
+	"name": "mk-s",
+	"version": "0.0.1",
 	"main": "app.js",
 	"license": "MIT",
 	"dependencies": {
+		"autoprefixer": "^9.1.5",
+		"base64-css": "^0.0.2",
 		"browser-sync": "^2.24.6",
 		"clean-css": "^4.2.1",
 		"copy": "^0.3.2",
+		"css-b64-images": "^0.2.5",
 		"fs": "^0.0.1-security",
 		"fs-path": "^0.0.24",
 		"gulp": "^3.9.1",
@@ -46,9 +49,14 @@
 		"less": "^3.8.1",
 		"merge": "^1.2.0",
 		"node-sass": "^4.9.3",
+		"optimus-css": "^0.1.2",
 		"packagify-html": "^0.0.7",
 		"path": "^0.12.7",
 		"pkg": "^4.3.4",
+		"postcss": "^7.0.2",
+		"postcss-inline-base64": "^4.0.0",
+		"postcss-url": "^8.0.0",
+		"precss": "^3.1.2",
 		"prompt": "^1.0.0",
 		"pug": "^2.0.3",
 		"readdirsync2": "^1.0.2",
@@ -61,7 +69,8 @@
 	"codename": "Platinum Uninorth",
 	"patchname": "Anoa",
 	"scripts": {
-		"start": "node runTasks.js",
+		"live": "node runTasksLive.js",
+		"build": "node runTasksInline.js",
 		"test": "node runTasks.js && node modules/makeSite/tasks/runTasksLevel2.js",
 		"cssInline": "node modules/makeSite/tasks/runTasksLevel2.js"
 	}

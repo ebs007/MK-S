@@ -9,6 +9,9 @@ var mkDir = require('../../../lib/mkDir.js');
 var checkExist = require('../../../lib/checkExist.js');
 
 module.exports.mountImg = async function (fileVar) {
+
+    try {
+
     var someError = null;
     var resultFiles = null;
 
@@ -31,7 +34,7 @@ module.exports.mountImg = async function (fileVar) {
     console.log('dstPath:',dstPath);
     // return new Promise((resolve, reject) => {
         // (async () => {
-            const files = await imagemin([srcPath], dstPath, {
+            const file = await imagemin([srcPath], dstPath, {
                 plugins: [
                     // imageminJpegoptim({
                     //         progressive: false,
@@ -40,21 +43,19 @@ module.exports.mountImg = async function (fileVar) {
                     // }),
                     imageminMozjpeg({quality: 70,progressive: false}),
                     imageminPngquant({
-                        quality: '15'
+                        quality: '40'
                     })
                 ]
             });
-            resultFiles = files;
-console.log(files);
+
+console.log('Image compress: ', file);
             //=> [{data: <Buffer 89 50 4e …>, path: 'build/images/foo.jpg'}, …]
         // })();
 
-        // resolve('img ok');
 
-        if (resultFiles == null) {
-            someError = true;
-			return someError;
-        }
-    // });
+    } catch(err) {
+        console.log('mountImg error: ', err);
+      // Handle error
+    }
 
 };

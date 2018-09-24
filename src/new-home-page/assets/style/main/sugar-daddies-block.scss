@@ -6,6 +6,14 @@
 */
 #sugar-daddies {
 
+	& .cls-1 {
+		fill: #f9f9f9;
+	}
+
+	& .cls-2 {
+		fill: #e00c00;
+	}
+
 	@media (max-width: $screen-xbs-max) {
 		& {
 			// padding-bottom: 50px!important;
@@ -70,16 +78,54 @@
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
-	& .sd-sub-title {
+	& .sugar-babies__info{
+		padding-bottom: 25px;
+	}
+
+	& .info-img__box{
+		min-height: 60px;
+	}
+
+	& .box__img {
+		width: 50px;
+	}
+
+	& .sugar-babies__info .media-body{
+		min-height: 60px;
+	}
+
+	& .info__title{
 		font-family: 'open_sansbold';
 		font-size: 18px;
-		line-height: 18px;
+		line-height: 24px;
 		font-weight: 700;
 		color: #222222;
-		padding-top: 15px;
-		padding-bottom: 10px;
+		// padding-top: 36px;
+		// padding-bottom: 40px;
 		text-align: left;
 	}
+
+	& .info__text{
+		font-family: 'open_sansregular';
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 400;
+		color: #222222;
+		// padding-top: 36px;
+		// padding-bottom: 30px;
+		text-align: left;
+	}
+
+	// & .sd-sub-title {
+	// 	font-family: 'open_sansbold';
+	// 	font-size: 18px;
+	// 	line-height: 18px;
+	// 	font-weight: 700;
+	// 	color: #222222;
+	// 	padding-top: 15px;
+	// 	padding-bottom: 40px;
+	// 	text-align: left;
+	// }
 
 	& .sd-title {
 		font-family: 'Lora';
@@ -87,20 +133,20 @@
 		line-height: 41px;
 		font-weight: 700;
 		color: #222222;
-		padding-bottom: 14px;
+		padding-bottom: 37px;
 		text-align: left;
 	}
 
-	& .sd-text {
-		font-family: 'open_sansregular';
-		font-size: 16px;
-		line-height: 28px;
-		font-weight: 400;
-		color: #222222;
-		padding-bottom: 7px;
-		text-align: left;
-	}
-
+	// & .sd-text {
+	// 	font-family: 'open_sansregular';
+	// 	font-size: 16px;
+	// 	line-height: 28px;
+	// 	font-weight: 400;
+	// 	color: #222222;
+	// 	padding-bottom: 7px;
+	// 	text-align: left;
+	// }
+	//
 	& .sd-about a {
 		display: block;
 		font-family: 'open_sansbold';
@@ -110,7 +156,9 @@
 		color: #E00C00;
 		text-align: left;
 		text-decoration: underline;
-		padding-bottom: 30px;
+		padding-top: 20px;
+		display: block;
+		padding-bottom: 50px;
 	}
 
 }
