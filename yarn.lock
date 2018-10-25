@@ -977,6 +977,12 @@ clean-css@4.1.11, clean-css@4.1.x:
   dependencies:
     source-map "0.5.x"
 
+clean-css@4.2.x, clean-css@^4.0.4, clean-css@^4.1.11, clean-css@^4.1.4, clean-css@^4.1.9, clean-css@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
+  dependencies:
+    source-map "~0.6.0"
+
 clean-css@^2.2.2:
   version "2.2.23"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-2.2.23.tgz#0590b5478b516c4903edc2d89bd3fdbdd286328c"
@@ -989,12 +995,6 @@ clean-css@^3.3.3:
   dependencies:
     commander "2.8.x"
     source-map "0.4.x"
-
-clean-css@^4.0.4, clean-css@^4.1.11, clean-css@^4.1.4, clean-css@^4.1.9, clean-css@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
-  dependencies:
-    source-map "~0.6.0"
 
 cliui@^2.1.0:
   version "2.1.0"
@@ -1129,6 +1129,10 @@ commander@2.16.x, commander@~2.16.0:
   version "2.16.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.16.0.tgz#f16390593996ceb4f3eeb020b31d78528f7f8a50"
 
+commander@2.17.x, commander@2.x.x, commander@^2.10.0, commander@^2.2.0, commander@~2.17.1:
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
+
 commander@2.2.x:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.2.0.tgz#175ad4b9317f3ff615f201c1e57224f55a3e91df"
@@ -1138,10 +1142,6 @@ commander@2.8.x, commander@~2.8.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.8.1.tgz#06be367febfda0c330aa1e2a072d3dc9762425d4"
   dependencies:
     graceful-readlink ">= 1.0.0"
-
-commander@2.x.x, commander@^2.10.0, commander@^2.2.0, commander@~2.17.1:
-  version "2.17.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
 commander@~2.13.0:
   version "2.13.0"
@@ -3486,6 +3486,13 @@ html-comment-regex@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/html-comment-regex/-/html-comment-regex-1.1.1.tgz#668b93776eaae55ebde8f3ad464b307a4963625e"
 
+html-miner@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/html-miner/-/html-miner-1.2.1.tgz#4062e997862de29029656427e07b004ff83f8a24"
+  dependencies:
+    cheerio "^0.22.0"
+    lodash "^4.17.10"
+
 html-minifier@^3.0.3:
   version "3.5.19"
   resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.19.tgz#ed53c4b7326fe507bc3a1adbcc3bbb56660a2ebd"
@@ -3493,6 +3500,18 @@ html-minifier@^3.0.3:
     camel-case "3.0.x"
     clean-css "4.1.x"
     commander "2.16.x"
+    he "1.1.x"
+    param-case "2.1.x"
+    relateurl "0.2.x"
+    uglify-js "3.4.x"
+
+html-minifier@^3.5.20:
+  version "3.5.20"
+  resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.20.tgz#7b19fd3caa0cb79f7cde5ee5c3abdf8ecaa6bb14"
+  dependencies:
+    camel-case "3.0.x"
+    clean-css "4.2.x"
+    commander "2.17.x"
     he "1.1.x"
     param-case "2.1.x"
     relateurl "0.2.x"
@@ -7873,7 +7892,7 @@ uglify-js@^2.4.14, uglify-js@^2.6, uglify-js@^2.6.1, uglify-js@^2.8.0, uglify-js
   optionalDependencies:
     uglify-to-browserify "~1.0.0"
 
-uglify-js@~3.4.6:
+uglify-js@^3.4.9, uglify-js@~3.4.6:
   version "3.4.9"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.9.tgz#af02f180c1207d76432e473ed24a28f4a782bae3"
   dependencies:

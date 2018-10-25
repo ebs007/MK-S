@@ -6,6 +6,10 @@
 */
 #media {
 
+    & {
+        background-color: #fff;
+    }
+
     & .owl-media {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -15,33 +19,7 @@
         // padding: 50px 0!important;
         border: 0;
         background: transparent;
-        height: 50px;
-    }
-
-    & picture img.globo{
-        width: 100px;
-
-    }
-
-    & picture img.forbes{
-        width: 100px;
-
-    }
-
-    & picture img.trip{
-        width: 53px;
-    }
-
-    & picture img.redetv{
-        width: 84px;
-    }
-
-    & picture img.yahoo{
-        width: 100px;
-    }
-
-    & picture img.gnt{
-        width: 58px;
+        height: auto;
     }
 
 }

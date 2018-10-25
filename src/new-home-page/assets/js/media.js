@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('.owl-carousel.owl-media').owlCarousel({
+        dots: false,
         nav:false,
         loop:true,
         autoplay:true,

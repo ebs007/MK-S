@@ -1,0 +1,64 @@
+<section id="blog-posts">
+    <div class="container-fluid p-0">
+        <div class="container p-0">
+            <link inline rel="stylesheet" href="assets/js/OwlCarousel2-2-3-4/assets/owl.carousel.min.css">
+            <link inline rel="stylesheet" href="assets/js/OwlCarousel2-2-3-4/assets/owl.theme.default.min.css">
+            <link inline rel="stylesheet" href="assets/style/main/blog-posts-block.css">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="title">Para Sugars e Curiosos</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="owl-carousel owl-blog-posts owl-theme">
+                    <?php
+                    $loopPress = new WP_Query( array(
+                        'post_type' => 'post',
+                        //'post__not_in' => array(1414),
+                        // 'post__not_in' => $postsHiddenId,
+                        'posts_per_page' => 8,
+                        // 'paged' => $pagina,
+                        'order' => 'DESC',
+                        'orderby' => 'date',
+                    ));
+                    if($loopPress->have_posts()) {
+                        while ( $loopPress->have_posts() ) {
+                            $loopPress->the_post();
+                            $maximoPaginas = $loopPress->max_num_pages;
+                            // echo "T1:";var_dump($maximoPaginas);echo "T1;";
+                            $image = wp_get_attachment_image_src(
+                                get_post_thumbnail_id(),
+                                'new-home-recent-posts'
+                            );
+                            $id = get_the_ID();
+                            $media = get_post_meta($id, 'meta-box-media', true);
+                            $radio = get_post_meta($id, 'meta-box-radio', true);
+                            $news = get_post_meta($id, 'meta-box-news', true);
+                            $post = get_post();
+                            $post_content = force_balance_tags( html_entity_decode( wp_trim_words( htmlentities($post->post_content), 20, '...' ) ) );
+                            // var_dump($media);
+                            // var_dump($radio);
+                            // $content = ($post->post_content, 40, '...' );
+                            // echo '<pre>';
+                            // var_dump($post);
+                            // var_dump($post->post_content);
+                            // var_dump(force_balance_tags( html_entity_decode( wp_trim_words( htmlentities($post->post_content), 40, '...' ) ) ) );
+                            // var_dump($loopPress->$posts->post_content);
+                            // echo '</pre>';
+                            //the_content();
+                            ?> <a href="<?php echo get_the_permalink(); ?>"> <div class="item card blog-post mx-auto"> <img class=card-img-top src="data:image/jpeg;base64,<?php echo base64_encode(file_get_contents($image[0])); ?>"alt="<?php echo title_limite(55); ?>"/> <div class=card-body> <h5 class=card-title><?php echo title_limite(55); ?></h5> </div> </div> </a> <?php
+                        }
+                        // End loop
+                    } else {
+                        // Translated message
+                        _e( 'Desculpa, não há posts para o sua pesquisa.', 'iel' );
+                    }
+                    // Reset query previous
+                    // wp_reset_query();
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

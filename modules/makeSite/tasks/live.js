@@ -33,7 +33,7 @@ module.exports.live = async function () {
 	{
 		awaitWriteFinish : true
 	},
-	 async function (event, file) {
+	async function (event, file) {
 		if (event === "change") {
 			console.log('teste html watch: ', event);
 			await taskSass.sass();
@@ -55,14 +55,26 @@ module.exports.live = async function () {
 		}
 	});
 
-	bs.watch("src/**/*.js", function (event, file) {
+	bs.watch("src/**/*.js",
+	{
+		awaitWriteFinish : true
+	},
+	async function (event, file) {
 		if (event === "change") {
-			cpExt.cpExt(
+			await taskSass.sass();
+			await taskBase64.base64();
+			await cpExt.cpExt(
 				'./src/',
 				'./build/',
 				['.js']
 			);
-			bs.reload("*.js");
+			await cpExt.cpExt(
+				'./src/',
+				'./build/',
+				['.html']
+			);
+			await taskCssInline.cssInline();
+			bs.reload("*.html");
 		}
 	});
 
@@ -89,7 +101,7 @@ module.exports.live = async function () {
 	{
 		awaitWriteFinish : true
 	},
-	 async function (event, file) {
+	async function (event, file) {
 		if (event === "change") {
 			console.log('teste sass watch: ', event);
 			await taskSass.sass();

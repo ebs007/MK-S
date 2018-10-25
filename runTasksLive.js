@@ -34,7 +34,8 @@ cpExt.cpExt(
 		'.ttf',
 		'.woff',
 		'.woff2',
-		'.gif'
+		'.gif',
+		'.ico'
 	]
 );
 

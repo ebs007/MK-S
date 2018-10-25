@@ -6,8 +6,12 @@
 */
 #sugar-daddies {
 
+	& {
+		background-color: #fff;
+	}
+
 	& .cls-1 {
-		fill: #f9f9f9;
+		fill: #fff;
 	}
 
 	& .cls-2 {
@@ -128,7 +132,7 @@
 	// }
 
 	& .sd-title {
-		font-family: 'Lora';
+		font-family: 'lorabold';
 		font-size: 32px;
 		line-height: 41px;
 		font-weight: 700;

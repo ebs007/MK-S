@@ -37,6 +37,8 @@
 		"gulp-rename": "^1.2.2",
 		"gulp-uglify": "^3.0.0",
 		"htinliner": "^0.3.2",
+		"html-miner": "^1.2.1",
+		"html-minifier": "^3.5.20",
 		"imagemin": "^6.0.0",
 		"imagemin-jpegoptim": "^5.2.0",
 		"imagemin-jpegtran": "^5.0.2",
@@ -64,6 +66,7 @@
 		"require-dir": "^1.0.0",
 		"rmdir": "^1.2.0",
 		"scandir": "^0.1.2",
+		"uglify-js": "^3.4.9",
 		"website-scraper": "^3.3.2"
 	},
 	"codename": "Platinum Uninorth",
