@@ -1,0 +1,334 @@
+@import 'C:\\framework-js\\MK-S\\src\\new-home-page\\assets\\style\\var.scss';
+/**
+* -----------------------------------------------------------------------
+*                                  Header
+* -----------------------------------------------------------------------
+*/
+
+header{
+
+    @media (max-width: $screen-xbs-max) {
+        & {
+            margin-top: 50px;
+        }
+    }
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        & {
+            margin-top: 50px;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        & {
+            margin-top: 50px;
+        }
+    }
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+    }
+
+    & .navbar-brand{
+
+        @media (max-width: $screen-xbs-max) {
+            &{
+                padding-left: 20px;
+                padding-right: 0;
+                padding-bottom: 0;
+                padding-top: 25px;
+            }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+            &{
+                padding-left: 20px;
+                padding-right: 0;
+                padding-bottom: 0;
+                padding-top: 25px;
+            }
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            &{
+                padding-left: 20px;
+                padding-right: 0;
+                padding-bottom: 0;
+                padding-top: 25px;
+            }
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            &{
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                padding-top: 25px;
+            }
+        }
+
+        @media (min-width: $screen-lg-min) {
+            &{
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                padding-top: 25px;
+            }
+        }
+
+    }
+
+    & .navbar-toggler{
+        border: 0;
+        @media (max-width: $screen-xbs-max) {
+            &{
+                padding-left: 0;
+                padding-right: 20px;
+                padding-bottom: 0;
+                padding-top: 40px;
+            }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+            &{
+                padding-left: 0;
+                padding-right: 20px;
+                padding-bottom: 0;
+                padding-top: 40px;
+            }
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            &{
+                padding-left: 0;
+                padding-right: 20px;
+                padding-bottom: 0;
+                padding-top: 40px;
+            }
+        }
+
+    }
+
+    & nav ul li .nav-link{
+
+        @media (max-width: $screen-xbs-max) {
+            & {
+                font-family: 'open_sansregular';
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                color: #fff!important;
+            }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+            & {
+                font-family: 'open_sansregular';
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                color: #fff!important;
+            }
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            & {
+                font-family: 'open_sansregular';
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                color: #fff!important;
+            }
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            & {
+                font-family: 'open_sansregular';
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 400;
+                text-align: left;
+                color: #fff!important;
+            }
+        }
+
+        @media (min-width: $screen-lg-min) {
+            & {
+                font-family: 'open_sansregular';
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: 400;
+                text-align: left;
+                color: #fff!important;
+            }
+        }
+
+    }
+
+    & #navbars-mp {
+
+        @media (max-width: $screen-xbs-max) {
+            & {
+                // background: #000;
+                // opacity: 0.9;
+                // border-radius: 10px;
+                // padding: 15px 50px!important;
+                // margin-top: 50px;
+                // margin-bottom: 50px;
+                // padding-left: 50px!important;
+                // padding-right: 50px!important;
+                // padding-top: 30px!important;
+                // padding-bottom: 30px!important;
+            }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+            & {
+                // background: #000;
+                // opacity: 0.9;
+                // border-radius: 10px;
+                // padding: 15px 50px!important;
+                // margin-top: 50px;
+                // margin-bottom: 50px;
+                // padding-left: 50px!important;
+                // padding-right: 50px!important;
+                // padding-top: 30px!important;
+                // padding-bottom: 30px!important;
+            }
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            & {
+                // background: #000;
+                // opacity: 0.9;
+                // border-radius: 10px;
+                // padding: 15px 50px!important;
+                // margin-top: 50px;
+                // margin-bottom: 50px;
+                // padding-left: 50px!important;
+                // padding-right: 50px!important;
+                // padding-top: 30px!important;
+                // padding-bottom: 30px!important;
+            }
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            & {
+                height: 100px;
+                // padding-left: 0;
+                // padding-right: 0;
+                // padding-bottom: 0;
+                // padding-top: 32px;
+            }
+        }
+
+        @media (min-width: $screen-lg-min) {
+            & {
+                height: 100px;
+                // padding-left: 0;
+                // padding-right: 0;
+                // padding-bottom: 0;
+                // padding-top: 32px;
+            }
+        }
+
+    }
+
+    & .navbar-nav .nav-link {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    & .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+
+    & .hero{
+        // background-image: url('header/img/hero/background-xl.jpg');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #000;
+        height: auto;
+        // min-height: 500px;
+
+        @media (max-width: $screen-xbs-max) {
+            &{
+                // background-image: url('header/img/hero/background-xs.jpg');
+            }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+            &{
+                // background-image: url('header/img/hero/background-xs@2x.jpg');
+            }
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            &{
+                // background-image: url('header/img/hero/background-xs@3x.jpg');
+            }
+        }
+
+    }
+    & .hero-gradient {
+        background: linear-gradient(to bottom, transparent 70%, #000);
+        height: auto;
+        min-height: 100px;
+    }
+
+    & .pre-logo-header {
+        // font-size: 0;
+        // line-height: 0;
+        // padding-top: 25px;
+    }
+
+    & .logo-header{
+        display: block;
+        width: 200px;
+        // height: 22px;
+    }
+    & .hero-main-text {
+        font-family: 'lorabold';
+        font-size: 38px;
+        line-height: 38px;
+        font-weight:700;
+        text-align: left;
+        color: #fff;
+    }
+    & .hero-sub-text {
+        font-family: 'open_sansregular';
+        font-size: 22px;
+        font-weight: 400;
+        text-align: left;
+        color: #fff;
+    }
+
+    & .hero-main{
+        padding-bottom: 60px;
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            & {
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+            }
+        }
+
+        @media (min-width: $screen-lg-min) {
+            & {
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+            }
+        }
+
+    }
+
+}
+
+/**
+* -----------------------------------------------------------------------
+*                               Header - End
+* -----------------------------------------------------------------------
+*/

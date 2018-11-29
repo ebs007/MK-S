@@ -73,6 +73,7 @@
 	"patchname": "Anoa",
 	"scripts": {
 		"live": "node runTasksLive.js",
+		"live-no-inline": "node runTasksLive-no-inline.js",
 		"build": "node runTasksInline.js",
 		"test": "node runTasks.js && node modules/makeSite/tasks/runTasksLevel2.js",
 		"cssInline": "node modules/makeSite/tasks/runTasksLevel2.js"
