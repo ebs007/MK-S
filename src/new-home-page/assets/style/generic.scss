@@ -4,6 +4,14 @@
 *                              Style Generic
 * -----------------------------------------------------------------------
 */
+a.dropdown-item:hover, a.btn:hover,
+// a.dropdown-item:visited, a.btn:visited,
+a.dropdown-item:active, a.btn:active,
+a.dropdown-item:focus, a.btn:focus{
+    background-color: #BF0000;
+    color: #fff;
+}
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

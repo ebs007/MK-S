@@ -22,6 +22,38 @@
         height: auto;
     }
 
+    & .media-test{
+        width: 130px;
+        height: auto;
+
+        @media (max-width: $screen-xbs-max) {
+            & {
+                width: 100px;
+            }
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+            & {
+                width: 120px;
+            }
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            & {
+                width: 122px;
+            }
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+        }
+
+        @media (min-width: $screen-lg-min) {
+
+        }
+
+    }
+
 }
 /**
 * -----------------------------------------------------------------------
