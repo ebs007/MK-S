@@ -5,19 +5,19 @@
 * -----------------------------------------------------------------------
 */
 
-.owl-blog-posts {
-    padding-bottom: 60px;
-}
-
-.owl-blog-posts .owl-stage-outer{
-    padding-bottom: 10px;
-    height: auto;
-}
-
-.owl-blog-posts .blog-post-img{
-    overflow: hidden;
-    height: 150px;
-}
+// .owl-blog-posts {
+//     padding-bottom: 60px;
+// }
+//
+// .owl-blog-posts .owl-stage-outer{
+//     padding-bottom: 10px;
+//     height: auto;
+// }
+//
+// .owl-blog-posts .blog-post-img{
+//     overflow: hidden;
+//     height: 150px;
+// }
 
 #blog-posts{
 
@@ -74,6 +74,18 @@
         }
 
     }
+
+    & .blog-post-img{
+        overflow: hidden;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    & .card-img-top {
+        min-height: 150px;
+    }
+
     & .card-title {
         font-family: 'open_sansregular';
         font-size: 16px;
@@ -84,10 +96,28 @@
         text-align: left;
         // height: 70px;
     }
+
     & .card-body {
         padding: 14px;
         height: 90px;
     }
+
+    .post-01{
+        background-image: url('main/curious-sugar/01.jpg');
+    }
+
+    .post-02{
+        background-image: url('main/curious-sugar/02.jpg');
+    }
+
+    .post-03{
+        background-image: url('main/curious-sugar/03.jpg');
+    }
+
+    .post-04{
+        background-image: url('main/curious-sugar/04.jpg');
+    }
+
 }
 /**
 * -----------------------------------------------------------------------

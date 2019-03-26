@@ -1,3 +1,6 @@
+<?php
+// Template Name: Front Page
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +10,13 @@
 	<meta name="theme-color" content="#e00c00">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-	<title>Meu Patrocínio</title>
+	<?php wp_head(); ?>
+
+	<script inline src="assets/js/datalayer.js"></script>
+	<link inline rel="stylesheet" href="assets/css/google-style.css">
+	<script inline src="assets/js/gtm.js"></script>
+
+	<title>Meu Patrocínio - Maior Rede Social Sugar Baby e Daddy do Brasil</title>
 
 	<link rel="shortcut icon" type="image/x-icon" href="data:image/ico;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC9/wAAvv8AAL//AAC+/wAAv/8AAL7/AAC9/wAAvv8DA8D/AgLA/wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAyP8AAML/AAC+/wAAwv8AAL7/AADB/wAAyv8AAMH/AAC7/wAAvf8AAL//AAC//wAAv/8AAL//AADA/wAAvf8AAI//AACs/wAAw/8AAK//AADC/wAAsv8AAIP/Bgaw/09P1v86Os3/AAC+/wEBv/8AAL//AAC//wAAvf8AAMj/AAB2/wAAmv8AAMX/AAA1/wAAtP8AAKn/AwM3/wAAuv+goOf/W1vW/wAAu/8EBMD/AAC//wAAv/8AAL3/AADJ/wAAjf8AAKL/AACV/wAANP8AAJb/AACn/wQESf8AAMX/kJDg/0tL0P8AALn/BAS+/wAAv/8AAL//AAC9/wAAyP8AAJL/AACZ/wAAVf8AAJj/AACF/wAAjv8EBE//AADG/46O4P9ubtr/OTnO/yEhxv8AAL3/AQG//wAAvv8AAMb/AACj/wAAbP8AAE3/AADM/wAAlv8AAF7/BARg/wAAx/+Pj+D/Tk7T/wMDwP+Hh+H/CQnB/wAAvv8AAL7/AADC/wAAt/8AACj/AAB+/wAAzP8AAL7/AAAz/wQEZv8AAMn/jIze/0tL0f8AALP/k5Ph/y4uy/8AALz/AAC+/wAAw/8AAK3/AAAq/wAAtf8AAL//AADP/wAAXP8DA1r/AADJ/5aW4v9OTtL/JibI/6qq6v8HB8H/AAC+/wAAvv8AAMP/AACj/wAAlf8AAMP/AAC9/wAAwv8AALH/AACL/wAAvP8+Ps//OTnN/0pK0v8bG8X/AAC9/wEBv/8AAL//AAC+/wAAw/8AAMf/AAC+/wAAv/8AAL7/AADC/wAAyP8AAL//AAC8/wAAvf8AALz/AQG+/wEBv/8AAL//AAC//wAAv/8AAL7/AAC9/wAAv/8AAL//AAC//wAAvv8AAL3/AAC//wMDwP8CAsD/AwPA/wEBv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAC//wAAv/8AAL//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==">
 	<link inline rel="stylesheet" href="assets/css/bootstrap-4.1.3-dist/bootstrap.min.css">
@@ -28,25 +37,27 @@
 			<link inline rel="stylesheet" href="assets/style/mobile/sidebar.css">
 			<ul class="sidebar-nav">
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#https://www.meupatrocinio.com/sugar" id="dropdown-sugar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sugar</a>
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown-sugar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sugar</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown-sugar">
-						<a class="dropdown-item" href="https://www.meupatrocinio.com/sugar-baby">Como ser uma Sugar Baby</a>
-						<a class="dropdown-item" href="https://www.meupatrocinio.com/sugar-daddy">Como ser um Sugar Daddy</a>
-						<a class="dropdown-item" href="https://www.meupatrocinio.com/sugar-mommy">Como ser uma Sugar Mommy</a>
-						<a class="dropdown-item" href="https://www.meupatrocinio.com/relacionamento-sugar">Relacionamento Sugar</a>
+						<!-- <a class="dropdown-item" href="<?php echo get_home_url(); ?>/sugar-baby"> uma Sugar Baby</a> -->
+						<!-- <a class="dropdown-item" href="<?php echo get_home_url(); ?>/sugar-daddy">Como ser um Sugar Daddy</a> -->
+						<!-- <a class="dropdown-item" href="<?php echo get_home_url(); ?>/sugar-mommy">Como ser uma Sugar Mommy</a> -->
+						<a class="dropdown-item" href="<?php echo get_home_url(); ?>/o-que-e-sugar-baby">O que é uma Sugar Baby</a>
+						<a class="dropdown-item" href="<?php echo get_home_url(); ?>/o-que-e-sugar-daddy">O que é um Sugar Daddy</a>
+						<a class="dropdown-item" href="<?php echo get_home_url(); ?>/relacionamento-sugar">Relacionamento Sugar</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="https://www.meupatrocinio.com/como-funciona">Como Funciona <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="<?php echo get_home_url(); ?>/como-funciona">Como Funciona <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="https://www.meupatrocinio.com/sobre-nos">Sobre nós</a>
+					<a class="nav-link" href="<?php echo get_home_url(); ?>/sobre-nos">Sobre nós</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="https://www.meupatrocinio.com/blog">Blog</a>
+					<a class="nav-link" href="<?php echo get_home_url(); ?>/blog">Blog</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="https://www.meupatrocinio.com/imprensa-e-midia">Imprensa</a>
+					<a class="nav-link" href="<?php echo get_home_url(); ?>/imprensa-e-midia">Imprensa</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="https://beta.meupatrocinio.com/initial/login">Login</a>
@@ -62,7 +73,7 @@
 			<div class="mobile-menu d-none d-lg-none d-xl-none d-flex flex-row">
 				<link inline rel="stylesheet" href="assets/style/mobile/bar.css">
 				<a href="#menu-toggle" class="" id="menu-toggle"><span class="navbar-toggler-icon"></span></a>
-				<a href="https://www.meupatrocinio.com" class="p-2 d-flex align-items-center justify-content-center">
+				<a href="<?php echo get_home_url(); ?>/" class="p-2 d-flex align-items-center justify-content-center">
 					<img inline src="assets/img/logo/meu-patrocinio.svg" class="logo-header" alt="Meu Patrocínio" />
 				</a>
 				<div class="d-flex align-items-center justify-content-end pr-3 w-100">
@@ -74,15 +85,52 @@
 			<header>
 				<link inline rel="stylesheet" href="assets/style/header/header.css">
 
+				<?php
+				if ( is_user_logged_in() ) {
+					?>
+					<style media="screen">
+						.mobile-menu {
+							top: 46px;
+						}
+						#wpadminbar {
+							position: fixed;
+							top: 0px;
+						}
+						@media screen and (max-width: 600px)
+						#wpadminbar {
+							position: fixed;
+						}
+						#wpadminbar * {
+							font-size: 12px;
+						}
+					</style>
+					<?php
+				} else {
+					?>
+					<style media="screen">
+
+					</style>
+					<?php
+				}
+				?>
+
 				<div class="container-fluid hero p-0">
+
 					<!-- <picture> <source media="(max-width: 575.98px)" srcset="assets/img/hero/background-xs.jpg" /> <source media="(min-width: 576px) and (max-width: 767.98px)" srcset="assets/img/hero/background-xs.jpg" /> <source media="(min-width: 768px) and (max-width: 991.98px)" srcset="assets/img/hero/background-xs.jpg" /> <source media="(min-width: 992px) and (max-width: 1199.98px)" srcset="assets/img/hero/background-xs.jpg" /> <source media="(min-width: 1200px)" srcset="assets/img/hero/background-xl.jpg" /> <img inline src="assets/img/hero/background-xl.jpg" class="jennifer-lobo-img" alt="Jennifer Lobo" /> </picture> -->
-					<div class="hero-gradient d-flex align-items-start flex-column">
+
+					<?php
+					if(is_front_page()){
+						$background_remove = "style='background: none;'";
+					}
+					?>
+
+					<div class="hero-gradient d-flex align-items-start flex-column" <?php //echo $background_remove; ?>>
 
 						<div class="container p-0 mb-auto">
 							<nav class="navbar navbar-expand-lg navbar-dark p-0">
 								<div class="container d-flex p-0">
 
-									<a href="https://www.meupatrocinio.com" class="d-none d-sm-none d-md-none d-lg-block pre-logo-header">
+									<a href="<?php echo get_home_url(); ?>/" class="d-none d-sm-none d-md-none d-lg-block pre-logo-header">
 										<img inline src="assets/img/logo/meu-patrocinio.svg" class="logo-header" alt="Meu Patrocínio" />
 									</a>
 
@@ -93,24 +141,26 @@
 											<li class="nav-item dropdown pr-3">
 												<a class="nav-link dropdown-toggle" href="#" id="dropdown-sugar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sugar</a>
 												<div class="dropdown-menu" aria-labelledby="dropdown-sugar">
-													<a class="dropdown-item" href="https://www.meupatrocinio.com/sugar">Sugar</a>
-													<a class="dropdown-item" href="https://www.meupatrocinio.com/sugar-baby">Como ser uma Sugar Baby</a>
-													<a class="dropdown-item" href="https://www.meupatrocinio.com/sugar-daddy">Como ser um Sugar Daddy</a>
-													<a class="dropdown-item" href="https://www.meupatrocinio.com/sugar-mommy">Como ser uma Sugar Mommy</a>
-													<a class="dropdown-item" href="https://www.meupatrocinio.com/relacionamento-sugar">Relacionamento Sugar</a>
+													<!-- <a class="dropdown-item" href="<?php echo get_home_url(); ?>/sugar">Sugar</a> -->
+													<!-- <a class="dropdown-item" href="<?php echo get_home_url(); ?>/sugar-baby">Como ser uma Sugar Baby</a> -->
+													<!-- <a class="dropdown-item" href="<?php echo get_home_url(); ?>/sugar-daddy">Como ser um Sugar Daddy</a> -->
+													<!-- <a class="dropdown-item" href="<?php echo get_home_url(); ?>/sugar-mommy">Como ser uma Sugar Mommy</a> -->
+													<a class="dropdown-item" href="<?php echo get_home_url(); ?>/o-que-e-sugar-baby">O que é uma Sugar Baby</a>
+													<a class="dropdown-item" href="<?php echo get_home_url(); ?>/o-que-e-sugar-daddy">O que é um Sugar Daddy</a>
+													<a class="dropdown-item" href="<?php echo get_home_url(); ?>/relacionamento-sugar">Relacionamento Sugar</a>
 												</div>
 											</li>
 											<li class="nav-item active pr-3">
-												<a class="nav-link" href="https://www.meupatrocinio.com/como-funciona">Como Funciona <span class="sr-only">(current)</span></a>
+												<a class="nav-link" href="<?php echo get_home_url(); ?>/como-funciona">Como Funciona <span class="sr-only">(current)</span></a>
 											</li>
 											<li class="nav-item pr-3">
-												<a class="nav-link" href="https://www.meupatrocinio.com/sobre-nos">Sobre nós</a>
+												<a class="nav-link" href="<?php echo get_home_url(); ?>/sobre-nos">Sobre nós</a>
 											</li>
 											<li class="nav-item pr-3">
-												<a class="nav-link" href="https://www.meupatrocinio.com/blog">Blog</a>
+												<a class="nav-link" href="<?php echo get_home_url(); ?>/blog">Blog</a>
 											</li>
 											<li class="nav-item pr-3">
-												<a class="nav-link" href="https://www.meupatrocinio.com/imprensa-e-midia">Imprensa</a>
+												<a class="nav-link" href="<?php echo get_home_url(); ?>/imprensa-e-midia">Imprensa</a>
 											</li>
 											<li class="nav-item pr-3">
 												<a class="nav-link" href="https://beta.meupatrocinio.com/initial/login">Login</a>
@@ -138,6 +188,8 @@
 
 				<section id="media">
 					<div class="container-fluid">
+						<!-- <link inline rel="stylesheet" href="assets/js/OwlCarousel2-2-3-4/assets/owl.carousel.min.css">
+						<link inline rel="stylesheet" href="assets/js/OwlCarousel2-2-3-4/assets/owl.theme.default.min.css"> -->
 						<link inline rel="stylesheet" href="assets/style/media/media.css">
 
 						<div class="">
@@ -234,6 +286,7 @@
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</section>
 
@@ -248,7 +301,7 @@
 									<div class="col-4 users">
 										<a href="https://beta.meupatrocinio.com/cadastro">
 											<picture>
-												<img inline src="assets/img/users/babies/new-baby-25.jpg" class="Baby 01" alt="Baby 01" />
+												<img inline src="assets/img/users/babies/new-sugar-baby-26.jpg" class="Baby 01" alt="Baby 01" />
 											</picture>
 										</a>
 									</div>
@@ -287,78 +340,77 @@
 											</picture>
 										</a>
 									</div>
-									<div class="sb-about"><a href="https://www.meupatrocinio.com/o-que-e-sugar-baby">O que é Sugar Baby</a></div>
+									<div class="sb-about"><a href="<?php echo get_home_url(); ?>/o-que-e-sugar-baby">O que é Sugar Baby</a></div>
 								</div>
 							</div>
 
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-								<div class="d-flex flex-column align-items-left justify-content-center">
-									<div class="sb-title">Vantagens de ser Sugar Baby</div>
-									<div class="media sugar-babies__info">
-										<div class="info-img__box d-flex flex-column align-items-center justify-content-center">
-											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.63" class="box__img">
-												<g id="_45873" data-name="45873" transform="translate(0 -14.502)">
-													<path id="Path_162" data-name="Path 162" class="cls-01" d="M50,37.473A23.007,23.007,0,0,1,30.51,60.181a5.305,5.305,0,0,0,.056-1.572l-.152-1.3a20.082,20.082,0,0,0,10.245-5.044,2.718,2.718,0,0,1-.5-.562c-.744-1.085.229-2.162.229-3.111,0-.931-1.876-.854-1.945-1.471-.237-2.135,1.31-2.164,2.135-2.989s-.815-2.7-1.875-2.579-4.069-.493-3.794-2.79c.334-2.8-3.564-2.551-4.123-3.857a3.749,3.749,0,0,1,2.3-4.768c2.5-.751,4.962-2.79,4.769-5.06a8.5,8.5,0,0,0-3.3-6.266,19.98,19.98,0,0,0-6.395-1.434c-2.008.079-3.773.526-3.693,1.445.2,2.253,6.6,2.838,5.529,4.944-.56,1.1-4.767,2.647-3.981,4.281.511,1.063,1.768.152,1.3,2.192-.216.939-1.039,2.7-2.3,2.816-1.294.121-2.372-3.308-5.895-3.42-1.665-.053-4.012,2.6-2.019,4.48,1.206,1.139,3.47-1.369,4.138.59.471,1.381-.063,4.281,2.134,5.494.8.442,2.029.827,3.244,1.444a43.167,43.167,0,0,0-6.633,2.063l-2.2-.581c.923-.768,2.421-1.309,2.044-2.987-.554-2.465-4.835-1.536-7.786-4.487A11.773,11.773,0,0,1,9.21,28.13a20.109,20.109,0,0,0-2.077,12.4c-.035,0-.069-.007-.1-.007a6.7,6.7,0,0,0-2.686.564A22.971,22.971,0,1,1,50,37.473Zm-17.231,6.7-5.61,2.579.087-1.222,3.634-1.641c-.518-.037-1.055-.051-1.592-.051-2.008,0-5.4,1.017-9.153,2.506L8.1,43.165a4.2,4.2,0,0,0-3.307.5l-.592.372a.934.934,0,0,0-.012,1.574l7.234,4.693c-1.728.884-3.368,1.781-4.813,2.639L2.9,50.982a2.335,2.335,0,0,0-1.96-.1l-.351.141A.934.934,0,0,0,.12,52.344l2.045,3.633h0c-.772.664-1.211,1.214-1.211,1.6,0,1.14,1.4,1.425,2.64,1.425,2.206,0,31.337-6.67,31.337-12.713C34.932,45.088,34.114,44.489,32.769,44.169Zm-12.283,11.8,6.41-2.258a.467.467,0,0,1,.619.386l.562,4.805a2.8,2.8,0,0,1-1.6,2.866l-.6.279a.934.934,0,0,1-1.095-.23l-4.489-5.1A.467.467,0,0,1,20.486,55.967Z" transform="translate(0)"/>
-												</g>
-											</svg>
-										</div>
-										<div class="media-body d-flex flex-column align-items-left justify-content-center pl-3">
-											<h5 class="info__title m-0">Viagens fantásticas, mimos e presentes.</h5>
-											<div class="info__text">Muitos Sugar Daddies gostam de viajar, assim como você.</div>
-										</div>
+								<div class="sb-title">Vantagens de ser Sugar Baby</div>
+								<div class="media sugar-babies__info mx-auto">
+									<div class="info-img__box d-flex flex-column align-items-center justify-content-center">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.63" class="box__img">
+											<g id="_45873" data-name="45873" transform="translate(0 -14.502)">
+												<path id="Path_162" data-name="Path 162" class="cls-01" d="M50,37.473A23.007,23.007,0,0,1,30.51,60.181a5.305,5.305,0,0,0,.056-1.572l-.152-1.3a20.082,20.082,0,0,0,10.245-5.044,2.718,2.718,0,0,1-.5-.562c-.744-1.085.229-2.162.229-3.111,0-.931-1.876-.854-1.945-1.471-.237-2.135,1.31-2.164,2.135-2.989s-.815-2.7-1.875-2.579-4.069-.493-3.794-2.79c.334-2.8-3.564-2.551-4.123-3.857a3.749,3.749,0,0,1,2.3-4.768c2.5-.751,4.962-2.79,4.769-5.06a8.5,8.5,0,0,0-3.3-6.266,19.98,19.98,0,0,0-6.395-1.434c-2.008.079-3.773.526-3.693,1.445.2,2.253,6.6,2.838,5.529,4.944-.56,1.1-4.767,2.647-3.981,4.281.511,1.063,1.768.152,1.3,2.192-.216.939-1.039,2.7-2.3,2.816-1.294.121-2.372-3.308-5.895-3.42-1.665-.053-4.012,2.6-2.019,4.48,1.206,1.139,3.47-1.369,4.138.59.471,1.381-.063,4.281,2.134,5.494.8.442,2.029.827,3.244,1.444a43.167,43.167,0,0,0-6.633,2.063l-2.2-.581c.923-.768,2.421-1.309,2.044-2.987-.554-2.465-4.835-1.536-7.786-4.487A11.773,11.773,0,0,1,9.21,28.13a20.109,20.109,0,0,0-2.077,12.4c-.035,0-.069-.007-.1-.007a6.7,6.7,0,0,0-2.686.564A22.971,22.971,0,1,1,50,37.473Zm-17.231,6.7-5.61,2.579.087-1.222,3.634-1.641c-.518-.037-1.055-.051-1.592-.051-2.008,0-5.4,1.017-9.153,2.506L8.1,43.165a4.2,4.2,0,0,0-3.307.5l-.592.372a.934.934,0,0,0-.012,1.574l7.234,4.693c-1.728.884-3.368,1.781-4.813,2.639L2.9,50.982a2.335,2.335,0,0,0-1.96-.1l-.351.141A.934.934,0,0,0,.12,52.344l2.045,3.633h0c-.772.664-1.211,1.214-1.211,1.6,0,1.14,1.4,1.425,2.64,1.425,2.206,0,31.337-6.67,31.337-12.713C34.932,45.088,34.114,44.489,32.769,44.169Zm-12.283,11.8,6.41-2.258a.467.467,0,0,1,.619.386l.562,4.805a2.8,2.8,0,0,1-1.6,2.866l-.6.279a.934.934,0,0,1-1.095-.23l-4.489-5.1A.467.467,0,0,1,20.486,55.967Z" transform="translate(0)"/>
+											</g>
+										</svg>
 									</div>
-									<div class="media sugar-babies__info">
-										<div class="info-img__box d-flex flex-column align-items-center justify-content-center">
-											<svg xmlns="http://www.w3.org/2000/svg" id="Group_558" data-name="Group 558" viewBox="0 0 50 50" class="box__img">
-												<g id="Group_551" data-name="Group 551">
-													<path id="Path_178" data-name="Path 178" class="cls-01" d="M25,4a2.946,2.946,0,0,1,3,3,3,3,0,0,1-6,0,2.946,2.946,0,0,1,3-3m0-4h0a6.957,6.957,0,0,0-7,7h0a6.957,6.957,0,0,0,7,7h0a6.957,6.957,0,0,0,7-7h0a6.957,6.957,0,0,0-7-7Z"/>
-												</g>
-												<g id="Group_552" data-name="Group 552">
-													<path id="Path_179" data-name="Path 179" class="cls-01" d="M25,40a3,3,0,1,1-3,3,2.946,2.946,0,0,1,3-3m0-4h0a6.957,6.957,0,0,0-7,7h0a6.957,6.957,0,0,0,7,7h0a6.957,6.957,0,0,0,7-7h0a6.957,6.957,0,0,0-7-7Z"/>
-												</g>
-												<g id="Group_553" data-name="Group 553">
-													<path id="Path_180" data-name="Path 180" class="cls-01" d="M43,40a3,3,0,1,1-3,3,2.946,2.946,0,0,1,3-3m0-4h0a6.957,6.957,0,0,0-7,7h0a6.957,6.957,0,0,0,7,7h0a6.957,6.957,0,0,0,7-7h0a6.957,6.957,0,0,0-7-7Z"/>
-												</g>
-												<g id="Group_554" data-name="Group 554">
-													<path id="Path_181" data-name="Path 181" class="cls-01" d="M7,40a3,3,0,0,1,0,6,3,3,0,0,1,0-6m0-4H7a6.957,6.957,0,0,0-7,7H0a6.957,6.957,0,0,0,7,7H7a6.957,6.957,0,0,0,7-7h0a6.957,6.957,0,0,0-7-7Z"/>
-												</g>
-												<g id="Group_555" data-name="Group 555">
-													<line id="Line_4" data-name="Line 4" class="cls-02" y2="22" transform="translate(25 14)"/>
-												</g>
-												<g id="Group_556" data-name="Group 556">
-													<line id="Line_5" data-name="Line 5" class="cls-02" y2="11" transform="translate(43 25)"/>
-												</g>
-												<g id="Group_557" data-name="Group 557">
-													<line id="Line_6" data-name="Line 6" class="cls-02" y2="11" transform="translate(7 25)"/>
-												</g>
-												<line id="Line_7" data-name="Line 7" class="cls-02" x2="36" transform="translate(7 25)"/>
-											</svg>
-										</div>
-										<div class="media-body d-flex flex-column align-items-left justify-content-center pl-3">
-											<h5 class="info__title m-0">Estabilidade e networking.</h5>
-											<div class="info__text">Sugar Daddies são bem relacionados, isso pode te impulsionar para o crescimento pessoal.</div>
-										</div>
+									<div class="media-body d-flex flex-column align-items-left justify-content-center pl-3">
+										<h5 class="info__title m-0">Viagens fantásticas, mimos e presentes.</h5>
+										<div class="info__text">Muitos Sugar Daddies gostam de viajar, assim como você.</div>
 									</div>
-									<div class="media sugar-babies__info">
-										<div class="info-img__box d-flex flex-column align-items-center justify-content-center">
-											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.863" class="box__img">
-												<g id="_126439" data-name="126439" transform="translate(0 -10.35)">
-													<g id="Group_496" data-name="Group 496" transform="translate(0 10.35)">
-														<path id="Path_168" data-name="Path 168" class="cls-01" d="M157.214,40.837a8.456,8.456,0,0,1-2.932-3.345,15.3,15.3,0,0,0,4.316-10.51c0-9.168-8.579-16.632-19.12-16.632-8.714,0-16.085,5.1-18.377,12.048a23.974,23.974,0,0,1,4.346-.836c2.457-4.439,7.815-7.537,14.031-7.537,8.517,0,15.455,5.813,15.455,12.957a12.164,12.164,0,0,1-5.358,9.8,18.034,18.034,0,0,1,.578,4.305,13.05,13.05,0,0,0,6.835.826A.584.584,0,0,0,157.214,40.837Z" transform="translate(-108.597 -10.35)"/>
-														<path id="Path_169" data-name="Path 169" class="cls-01" d="M19.348,145.45C8.662,145.45,0,153.038,0,162.413a15.622,15.622,0,0,0,4.305,10.655,7.9,7.9,0,0,1-3.056,3.944.527.527,0,0,0,.206.97,11.4,11.4,0,0,0,7.392-1.342,21.2,21.2,0,0,0,10.51,2.726c10.686,0,19.348-7.588,19.348-16.963C38.685,153.049,30.023,145.45,19.348,145.45Z" transform="translate(0 -131.502)"/>
-													</g>
-												</g>
-											</svg>
-										</div>
-										<div class="media-body d-flex flex-column align-items-left justify-content-center pl-3">
-											<h5 class="info__title m-0">Relacionamento experiente, sem joguinhos.</h5>
-											<div class="info__text">Encontre homens experientes e objetivos.</div>
-										</div>
-									</div>
-									<!-- <div class="sb-title">Mulheres jovens atraentes, inteligentes e ambiciosas.</div>
-									<div class="sb-text">Você merece o melhor que o mundo tem a oferecer e está preparada para agarrar uma oportunidade. Seja uma jovem, estudante ou modelo, sua busca é por um relacionamento maduro com alguém que te apoie emocional, intelectual e financeiramente.</div> -->
 								</div>
+								<div class="media sugar-babies__info mx-auto">
+									<div class="info-img__box d-flex flex-column align-items-center justify-content-center">
+										<svg xmlns="http://www.w3.org/2000/svg" id="Group_558" data-name="Group 558" viewBox="0 0 50 50" class="box__img">
+											<g id="Group_551" data-name="Group 551">
+												<path id="Path_178" data-name="Path 178" class="cls-01" d="M25,4a2.946,2.946,0,0,1,3,3,3,3,0,0,1-6,0,2.946,2.946,0,0,1,3-3m0-4h0a6.957,6.957,0,0,0-7,7h0a6.957,6.957,0,0,0,7,7h0a6.957,6.957,0,0,0,7-7h0a6.957,6.957,0,0,0-7-7Z"/>
+											</g>
+											<g id="Group_552" data-name="Group 552">
+												<path id="Path_179" data-name="Path 179" class="cls-01" d="M25,40a3,3,0,1,1-3,3,2.946,2.946,0,0,1,3-3m0-4h0a6.957,6.957,0,0,0-7,7h0a6.957,6.957,0,0,0,7,7h0a6.957,6.957,0,0,0,7-7h0a6.957,6.957,0,0,0-7-7Z"/>
+											</g>
+											<g id="Group_553" data-name="Group 553">
+												<path id="Path_180" data-name="Path 180" class="cls-01" d="M43,40a3,3,0,1,1-3,3,2.946,2.946,0,0,1,3-3m0-4h0a6.957,6.957,0,0,0-7,7h0a6.957,6.957,0,0,0,7,7h0a6.957,6.957,0,0,0,7-7h0a6.957,6.957,0,0,0-7-7Z"/>
+											</g>
+											<g id="Group_554" data-name="Group 554">
+												<path id="Path_181" data-name="Path 181" class="cls-01" d="M7,40a3,3,0,0,1,0,6,3,3,0,0,1,0-6m0-4H7a6.957,6.957,0,0,0-7,7H0a6.957,6.957,0,0,0,7,7H7a6.957,6.957,0,0,0,7-7h0a6.957,6.957,0,0,0-7-7Z"/>
+											</g>
+											<g id="Group_555" data-name="Group 555">
+												<line id="Line_4" data-name="Line 4" class="cls-02" y2="22" transform="translate(25 14)"/>
+											</g>
+											<g id="Group_556" data-name="Group 556">
+												<line id="Line_5" data-name="Line 5" class="cls-02" y2="11" transform="translate(43 25)"/>
+											</g>
+											<g id="Group_557" data-name="Group 557">
+												<line id="Line_6" data-name="Line 6" class="cls-02" y2="11" transform="translate(7 25)"/>
+											</g>
+											<line id="Line_7" data-name="Line 7" class="cls-02" x2="36" transform="translate(7 25)"/>
+										</svg>
+									</div>
+									<div class="media-body d-flex flex-column align-items-left justify-content-center pl-3">
+										<h5 class="info__title m-0">Estabilidade e networking.</h5>
+										<div class="info__text">Sugar Daddies são bem relacionados, isso pode te impulsionar para o crescimento pessoal.</div>
+									</div>
+								</div>
+								<div class="media sugar-babies__info mx-auto">
+									<div class="info-img__box d-flex flex-column align-items-center justify-content-center">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47.863" class="box__img">
+											<g id="_126439" data-name="126439" transform="translate(0 -10.35)">
+												<g id="Group_496" data-name="Group 496" transform="translate(0 10.35)">
+													<path id="Path_168" data-name="Path 168" class="cls-01" d="M157.214,40.837a8.456,8.456,0,0,1-2.932-3.345,15.3,15.3,0,0,0,4.316-10.51c0-9.168-8.579-16.632-19.12-16.632-8.714,0-16.085,5.1-18.377,12.048a23.974,23.974,0,0,1,4.346-.836c2.457-4.439,7.815-7.537,14.031-7.537,8.517,0,15.455,5.813,15.455,12.957a12.164,12.164,0,0,1-5.358,9.8,18.034,18.034,0,0,1,.578,4.305,13.05,13.05,0,0,0,6.835.826A.584.584,0,0,0,157.214,40.837Z" transform="translate(-108.597 -10.35)"/>
+													<path id="Path_169" data-name="Path 169" class="cls-01" d="M19.348,145.45C8.662,145.45,0,153.038,0,162.413a15.622,15.622,0,0,0,4.305,10.655,7.9,7.9,0,0,1-3.056,3.944.527.527,0,0,0,.206.97,11.4,11.4,0,0,0,7.392-1.342,21.2,21.2,0,0,0,10.51,2.726c10.686,0,19.348-7.588,19.348-16.963C38.685,153.049,30.023,145.45,19.348,145.45Z" transform="translate(0 -131.502)"/>
+												</g>
+											</g>
+										</svg>
+									</div>
+									<div class="media-body d-flex flex-column align-items-left justify-content-center pl-3">
+										<h5 class="info__title m-0">Relacionamento experiente, sem joguinhos.</h5>
+										<div class="info__text">Encontre homens experientes e objetivos.</div>
+									</div>
+								</div>
+								<!-- <div class="sb-title">Mulheres jovens atraentes, inteligentes e ambiciosas.</div>
+								<div class="sb-text">Você merece o melhor que o mundo tem a oferecer e está preparada para agarrar uma oportunidade. Seja uma jovem, estudante ou modelo, sua busca é por um relacionamento maduro com alguém que te apoie emocional, intelectual e financeiramente.</div> -->
 							</div>
+
 						</div>
 					</div>
 				</section>
@@ -483,7 +535,7 @@
 												<source inline media="(min-width: 768px) and (max-width: 991.98px)" srcset="assets/img/users/daddy-02-mob@3x.jpg" />
 												<source inline media="(min-width: 992px) and (max-width: 1199.98px)" srcset="assets/img/users/daddy-02-desktop.jpg" />
 												<source inline media="(min-width: 1200px)" srcset="assets/img/users/daddy-02-desktop@2x.jpg" /> -->
-												<img inline src="assets/img/users/daddies/new-daddy-03.jpg" class="daddy 02" alt="daddy 02"/>
+												<img inline src="assets/img/users/daddies/new-daddy-05.jpg" class="daddy 02" alt="daddy 02"/>
 											</picture>
 										</a>
 									</div>
@@ -507,7 +559,7 @@
 												<source inline media="(min-width: 768px) and (max-width: 991.98px)" srcset="assets/img/users/daddy-04-mob@3x.jpg" />
 												<source inline media="(min-width: 992px) and (max-width: 1199.98px)" srcset="assets/img/users/daddy-04-desktop.jpg" />
 												<source inline media="(min-width: 1200px)" srcset="assets/img/users/daddy-04-desktop@2x.jpg" /> -->
-												<img inline src="assets/img/users/daddies/new-daddy-05.jpg" class="daddy 04" alt="daddy 04" />
+												<img inline src="assets/img/users/daddies/new-daddy-13.jpg" class="daddy 04" alt="daddy 04" />
 											</picture>
 										</a>
 									</div>
@@ -531,11 +583,11 @@
 												<source inline media="(min-width: 768px) and (max-width: 991.98px)" srcset="assets/img/users/daddy-06-mob@3x.jpg" />
 												<source inline media="(min-width: 992px) and (max-width: 1199.98px)" srcset="assets/img/users/daddy-06-desktop.jpg" />
 												<source inline media="(min-width: 1200px)" srcset="assets/img/users/daddy-06-desktop@2x.jpg" /> -->
-												<img inline src="assets/img/users/daddies/new-daddy-07.jpg" class="daddy 06" alt="daddy 06" />
+												<img inline src="assets/img/users/daddies/new-daddy-14.jpg" class="daddy 06" alt="daddy 06" />
 											</picture>
 										</a>
 									</div>
-									<div class="sd-about"><a href="https://www.meupatrocinio.com/o-que-e-sugar-daddy">O que é Sugar Daddy</a></div>
+									<div class="sd-about"><a href="<?php echo get_home_url(); ?>/o-que-e-sugar-daddy">O que é Sugar Daddy</a></div>
 								</div>
 							</div>
 
@@ -593,8 +645,6 @@
 
 				<section id="blog-posts">
 					<div class="container p-0">
-						<link inline rel="stylesheet" href="assets/js/OwlCarousel2-2-3-4/assets/owl.carousel.min.css">
-						<link inline rel="stylesheet" href="assets/js/OwlCarousel2-2-3-4/assets/owl.theme.default.min.css">
 						<link inline rel="stylesheet" href="assets/style/main/blog-posts-block.css">
 						<div class="row">
 							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -602,48 +652,48 @@
 							</div>
 						</div>
 
-						<div class="row">
-							<div class="owl-carousel owl-blog-posts owl-theme">
-								<a href="https://www.meupatrocinio.com/blog">
-									<div class="item card blog-post mx-auto">
-										<div class="blog-post-img">
-											<img inline class="card-img-top" src="assets/img/curious-sugar/01.jpg" alt="">
+						<div class="">
+							<div class="row">
+								<?php
+								$loopPress = new WP_Query( array(
+								'post_type' => 'post',
+								'posts_per_page' => 4,
+								'order' => 'DESC',
+								'orderby' => 'date',
+								));
+								if($loopPress->have_posts()) {
+									while ( $loopPress->have_posts() ) {
+										$loopPress->the_post();
+										$maximoPaginas = $loopPress->max_num_pages;
+										$image = wp_get_attachment_image_src(
+										get_post_thumbnail_id(),
+										'new-home-recent-posts'
+										);
+										$id = get_the_ID();
+										$media = get_post_meta($id, 'meta-box-media', true);
+										$radio = get_post_meta($id, 'meta-box-radio', true);
+										$news = get_post_meta($id, 'meta-box-news', true);
+										$post = get_post();
+										$post_content = force_balance_tags( html_entity_decode( wp_trim_words( htmlentities($post->post_content), 20, '...' ) ) );
+										?>
+										<div class="col-12 col-sm-12 col-md-6 col-lg-3 p-0">
+											<div class="d-flex flex-column align-items-center justify-content-center pb-5">
+												<a href="<?php echo get_the_permalink(); ?>">
+													<div class="item card blog-post mx-auto">
+														<div class="blog-post-img" style="background-image: url(data:image/jpeg;base64,<?php echo base64_encode(file_get_contents($image[0])); ?>);"></div>
+														<div class="card-body">
+															<h5 class="card-title"><?php echo title_limite(55); ?></h5>
+														</div>
+													</div>
+												</a>
+											</div>
 										</div>
-										<div class="card-body">
-											<h5 class="card-title">Dicas Para Se Vestir Bem No Frio</h5>
-										</div>
-									</div>
-								</a>
-								<a href="https://www.meupatrocinio.com/blog">
-									<div class="item card blog-post mx-auto">
-										<div class="blog-post-img">
-											<img inline class="card-img-top" src="assets/img/curious-sugar/02.jpg" alt="">
-										</div>
-										<div class="card-body">
-											<h5 class="card-title">Confissões Sugar Daddy: Gustavo</h5>
-										</div>
-									</div>
-								</a>
-								<a href="https://www.meupatrocinio.com/blog">
-									<div class="item card blog-post mx-auto">
-										<div class="blog-post-img">
-											<img inline class="card-img-top" src="assets/img/curious-sugar/03.jpg" alt="">
-										</div>
-										<div class="card-body">
-											<h5 class="card-title">Hotéis De Luxo E Suas Piscinas Imperdíveis</h5>
-										</div>
-									</div>
-								</a>
-								<a href="https://www.meupatrocinio.com/blog">
-									<div class="item card blog-post mx-auto">
-										<div class="blog-post-img">
-											<img inline class="card-img-top" src="assets/img/curious-sugar/04.jpg" alt="">
-										</div>
-										<div class="card-body">
-											<h5 class="card-title">Destinos Mais Caros Do Mundo</h5>
-										</div>
-									</div>
-								</a>
+										<?php
+									}
+								} else {
+									_e( 'Desculpa, não há posts para o sua pesquisa.', 'iel' );
+								}
+								?>
 							</div>
 						</div>
 					</div>
@@ -657,34 +707,50 @@
 							<div class="row">
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 									<div class="title">Faça parte do Meu Patrocínio</div>
-									<div class="text-t1">O Meu Patrocínio já conta com 750 mil usuários. <br> Entre e encontre a sua Sugar Baby ou Sugar Daddy.</div>
+									<div class="text-t1">O Meu Patrocínio já conta com mais de 1 milhão usuários. <br> Entre e encontre a sua Sugar Baby ou Sugar Daddy.</div>
 								</div>
 							</div>
 
-							<div class="row">
-								<div class="owl-carousel owl-statistic owl-theme">
-									<div class="item card statistic-item mx-auto">
-										<div class="card-body">
-											<h5 class="card-title">579 Mil</h5>
-											<p class="card-text">Sugar Babies Femininos</p>
+							<div class="">
+								<div class="row">
+									<div class="col-12 col-sm-12 col-md-3">
+										<div class="d-flex flex-column align-items-center justify-content-center pb-5">
+											<div class="item card statistic-item mx-auto">
+												<div class="card-body">
+													<h5 class="card-title">811 Mil</h5>
+													<p class="card-text">Sugar Babies Femininos</p>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="item card statistic-item mx-auto">
-										<div class="card-body">
-											<h5 class="card-title">76 Mil</h5>
-											<p class="card-text">Sugar Babies Masculinos</p>
+									<div class="col-12 col-sm-12 col-md-3">
+										<div class="d-flex flex-column align-items-center justify-content-center pb-5">
+											<div class="item card statistic-item mx-auto">
+												<div class="card-body">
+													<h5 class="card-title">279 Mil</h5>
+													<p class="card-text">Sugar Babies Masculinos</p>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="item card statistic-item mx-auto">
-										<div class="card-body">
-											<h5 class="card-title">81 Mil</h5>
-											<p class="card-text">Sugar Daddies</p>
+									<div class="col-12 col-sm-12 col-md-3">
+										<div class="d-flex flex-column align-items-center justify-content-center pb-5">
+											<div class="item card statistic-item mx-auto">
+												<div class="card-body">
+													<h5 class="card-title">122 Mil</h5>
+													<p class="card-text">Sugar Daddies</p>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="item card statistic-item mx-auto">
-										<div class="card-body">
-											<h5 class="card-title">14 Mil</h5>
-											<p class="card-text">Sugar Mommies</p>
+									<div class="col-12 col-sm-12 col-md-3">
+										<div class="d-flex flex-column align-items-center justify-content-center">
+											<div class="item card statistic-item mx-auto">
+												<div class="card-body">
+													<h5 class="card-title">21 Mil</h5>
+													<p class="card-text">Sugar Mommies</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -708,29 +774,29 @@
 				<link inline rel="stylesheet" href="assets/style/footer/footer.css">
 				<div class="container">
 					<div class="row pl-3 pt-2 pb-2 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start">
-						<a href="https://www.meupatrocinio.com"><img inline src="assets/img/logo/mp-ios-icon.png" class="icon-logo-footer" alt="Meu Patrocínio" /><img inline src="assets/img/logo/meu-patrocinio.svg" class="logo pl-3" alt="Meu Patrocínio" /></a>
+						<a href="<?php echo get_home_url(); ?>/"><img inline src="assets/img/logo/mp-ios-icon.png" class="icon-logo-footer" alt="Meu Patrocínio" /><img inline src="assets/img/logo/meu-patrocinio.svg" class="logo pl-3" alt="Meu Patrocínio" /></a>
 					</div>
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start order-1">
 							<nav>
 								<ul>
-									<li><a href="https://www.meupatrocinio.com/contato">Atendimento ao cliente</a></li>
-									<li><a href="https://www.meupatrocinio.com/termos-e-condicoes-de-uso">Termos e condições</a></li>
-									<li><a href="https://www.meupatrocinio.com/politica-de-privacidade">Políticas de privacidade</a></li>
-									<li><a href="https://www.meupatrocinio.com/faq-items">FAQ - Perguntas frequentes</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/contato">Atendimento ao cliente</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/termos-e-condicoes-de-uso">Termos e condições</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/politica-de-privacidade">Políticas de privacidade</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/faq">FAQ - Perguntas frequentes</a></li>
 								</ul>
 							</nav>
 						</div>
 						<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start order-2 pb-3">
 							<nav>
 								<ul>
-									<li><a href="https://www.meupatrocinio.com/relacionamento-sugar">Relacionamento Sugar</a></li>
-									<li><a href="https://www.meupatrocinio.com/sugar-baby">Sugar Baby</a></li>
-									<li><a href="https://www.meupatrocinio.com/sugar-daddy">Sugar Daddy</a></li>
-									<li><a href="https://www.meupatrocinio.com/sugar-mommy">Sugar Mommy</a></li>
-									<li><a href="https://www.meupatrocinio.com/como-funciona">Como funciona</a></li>
-									<li><a href="https://www.meupatrocinio.com/sobre-nos">Sobre nós</a></li>
-									<li><a href="https://www.meupatrocinio.com/imprensa-e-midia">Imprensa</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/relacionamento-sugar">Relacionamento Sugar</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/sugar-baby">Sugar Baby</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/sugar-daddy">Sugar Daddy</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/sugar-mommy">Sugar Mommy</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/como-funciona">Como funciona</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/sobre-nos">Sobre nós</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/imprensa-e-midia">Imprensa</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -738,10 +804,10 @@
 							<nav>
 								<ul>
 
-									<li><a href="https://www.meupatrocinio.com/depoimentos">Depoimentos</a></li>
-									<li><a href="https://www.meupatrocinio.com/casting">Casting</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/depoimentos">Depoimentos</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/casting">Casting</a></li>
 									<li><a href="https://out.meupatrocinio.com.br/aba24c13-840f-4b76-9a21-384e29f3f3a5?utm_campaign=footer">Livro: Como conseguir um homem rico</a></li>
-									<li><a href="https://www.meupatrocinio.com/sugar-daddy-gay">Ir para versão gay</a></li>
+									<li><a href="<?php echo get_home_url(); ?>/sugar-daddy-gay">Ir para versão gay</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -787,7 +853,7 @@
 				</div>
 				<div class="copyright">
 					<div class="container">
-						© 2016 MEUPATROCINIO. ® | TODOS OS DIREITOS RESERVADOS. <a href="https://www.meupatrocinio.com">MEUPATROCINIO</a>
+						© 2019 MEUPATROCINIO. ® | TODOS OS DIREITOS RESERVADOS. <a href="<?php echo get_home_url(); ?>/">MEUPATROCINIO</a>
 					</div>
 				</div>
 			</footer>
@@ -795,16 +861,18 @@
 
 	</div>
 
-	<script inline src="assets/js/jquery/jquery-3.3.1.slim.min.js"></script>
+	<?php wp_footer(); ?>
+
+	<script inline src="assets/js/jquery/jquery-3.3.1.min.js"></script>
 	<!-- <script inline src="assets/js/bootstrap-4.1.3-dist/popper.min.js"></script> -->
 	<!-- <script inline src="assets/js/bootstrap-4.1.3-dist/bootstrap.min.js"></script> -->
 	<script inline src="assets/js/bar.js"></script>
 	<script inline src="assets/style/header/js/desktop-menu.js"></script>
-	<script inline src="assets/js/OwlCarousel2-2-3-4/owl.carousel.min.js"></script>
-	<script inline src="assets/js/media.js"></script>
+	<!-- <script inline src="assets/js/OwlCarousel2-2-3-4/owl.carousel.min.js"></script> -->
+	<!-- <script inline src="assets/js/media.js"></script> -->
 	<!-- <script inline src="assets/js/sugar-babies-block.js"></script> -->
-	<script inline src="assets/js/blog-posts-block.js"></script>
-	<script inline src="assets/js/statistic-block.js"></script>
+	<!-- <script inline src="assets/js/blog-posts-block.js"></script> -->
+	<!-- <script inline src="assets/js/statistic-block.js"></script> -->
 
 </body>
 </html>

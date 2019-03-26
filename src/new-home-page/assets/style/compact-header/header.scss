@@ -272,7 +272,7 @@ header{
 
     }
     & .hero-gradient {
-        background: linear-gradient(to bottom, transparent 70%, #000);
+        background: linear-gradient(to bottom, transparent 0%, #000);
         height: auto;
         min-height: 100px;
     }
@@ -295,6 +295,7 @@ header{
         font-weight:700;
         text-align: left;
         color: #fff;
+        word-break: break-all;
     }
     & .hero-sub-text {
         font-family: 'open_sansregular';

@@ -124,7 +124,7 @@ module.exports.live = async function () {
 			baseDir: "build",
 			// index: "/new-home-page/index.html"
 		},
-		startPath: "/new-home-page/index.html"
+		startPath: "/new-home-page/index-v3.html"
 	});
 
 };

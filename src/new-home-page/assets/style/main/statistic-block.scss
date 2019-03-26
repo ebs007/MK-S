@@ -43,6 +43,27 @@
         text-align: center;
         padding-bottom: 10px;
         margin: 0;
+
+        @media (max-width: $screen-xbs-max) {
+            font-size: 42px;
+        }
+
+        @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+            font-size: 42px;
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            font-size: 42px;
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            font-size: 42px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            font-size: 46px;
+        }
+
     }
 
     & .sub-title {
@@ -78,6 +99,10 @@
         padding: 0;
     }
 
+    & .card-img-top {
+        height: 100%;
+    }
+
     & .text-t1 {
         font-family: 'open_sansregular';
         font-size: 15px;
@@ -88,7 +113,7 @@
         text-align: center;
         padding-top: 20px;
         // padding-right: 77px;
-        padding-bottom: 65px
+        padding-bottom: 65px;
     }
 
 }
