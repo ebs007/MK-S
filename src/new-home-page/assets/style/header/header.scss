@@ -168,6 +168,7 @@ header{
         font-weight:700;
         text-align: left;
         color: #fff;
+        margin: 0;
         // word-break: break-all;
 
         @media (max-width: $screen-xbs-max) {
@@ -214,6 +215,7 @@ header{
         font-weight: 400;
         text-align: left;
         color: #fff;
+        margin: 0;
 
         @media (max-width: $screen-xbs-max) {
             &{
