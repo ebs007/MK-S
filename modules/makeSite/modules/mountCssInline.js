@@ -74,7 +74,7 @@ module.exports.mountCssInline = async function (fileVar) {
 
         html = await inlineSource(fileVar.auxOnlyDirPath + fileVar.auxOnlyFileName, {
             compress: true,
-            rootpath: path.resolve('build/new-home-page'),
+            rootpath: path.resolve('build/celso-lisboa'),
             // tag: 'source'
             // Skip all css types and png formats
             // ignore: ['css', 'png']

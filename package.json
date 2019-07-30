@@ -6,7 +6,6 @@
 	"dependencies": {
 		"autoprefixer": "^9.1.5",
 		"base64-css": "^0.0.2",
-		"browser-sync": "^2.24.6",
 		"clean-css": "^4.2.1",
 		"copy": "^0.3.2",
 		"css-b64-images": "^0.2.5",
@@ -43,7 +42,8 @@
 		"rmdir": "^1.2.0",
 		"scandir": "^0.1.2",
 		"uglify-js": "^3.4.9",
-		"website-scraper": "^3.3.2"
+		"website-scraper": "^3.3.2",
+		"browser-sync": "^2.26.7"
 	},
 	"codename": "Platinum Uninorth",
 	"patchname": "Anoa",

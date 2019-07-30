@@ -3,7 +3,7 @@ var taskImg = require('./img.js');
 var taskBase64 = require('./base64.js');
 var taskCssInline = require('./cssInline.js');
 var cpExt = require('../../../lib/cpExt.js');
-var bs = require('browser-sync').create();
+var bs = require('browser-sync').create('my server');
 
 module.exports.live = async function () {
 
@@ -120,11 +120,16 @@ module.exports.live = async function () {
 	bs.init({
 		// https: true,
 		// cors: true,
+		// proxy: 'statamic-test.dev',
+		// watch: true,
+		// reloadOnRestart: false,
+		// server: "./build/celso-lisboa"
 		server: {
 			baseDir: "build",
-			// index: "/new-home-page/index.html"
+			// directory: true,
+			// index: "/celso-lisboa/index.html"
 		},
-		startPath: "/new-home-page/index-v3.html"
+		startPath: "/celso-lisboa/index.html"
 	});
 
 };
