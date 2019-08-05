@@ -6,6 +6,7 @@
 	"dependencies": {
 		"autoprefixer": "^9.1.5",
 		"base64-css": "^0.0.2",
+		"browser-sync": "^2.26.7",
 		"clean-css": "^4.2.1",
 		"copy": "^0.3.2",
 		"css-b64-images": "^0.2.5",
@@ -15,9 +16,9 @@
 		"html-miner": "^1.2.1",
 		"html-minifier": "^3.5.20",
 		"imagemin": "^6.0.0",
-		"imagemin-jpegoptim": "^5.2.0",
-		"imagemin-jpegtran": "^5.0.2",
-		"imagemin-mozjpeg": "^7.0.0",
+		"imagemin-jpegoptim": "^6.0.0",
+		"imagemin-jpegtran": "^6.0.0",
+		"imagemin-mozjpeg": "^8.0.0",
 		"imagemin-pngquant": "^6.0.0",
 		"inline-images": "^1.0.1",
 		"inline-source": "^6.1.8",
@@ -26,6 +27,7 @@
 		"less": "^3.8.1",
 		"merge": "^1.2.0",
 		"node-sass": "^4.9.3",
+		"node-sass-import": "^2.0.1",
 		"optimus-css": "^0.1.2",
 		"packagify-html": "^0.0.7",
 		"path": "^0.12.7",
@@ -42,8 +44,7 @@
 		"rmdir": "^1.2.0",
 		"scandir": "^0.1.2",
 		"uglify-js": "^3.4.9",
-		"website-scraper": "^3.3.2",
-		"browser-sync": "^2.26.7"
+		"website-scraper": "^3.3.2"
 	},
 	"codename": "Platinum Uninorth",
 	"patchname": "Anoa",
