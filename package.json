@@ -20,6 +20,7 @@
 		"imagemin-jpegtran": "^6.0.0",
 		"imagemin-mozjpeg": "^8.0.0",
 		"imagemin-pngquant": "^6.0.0",
+		"import-html.js": "^1.1.0",
 		"inline-images": "^1.0.1",
 		"inline-source": "^6.1.8",
 		"inliner": "^1.13.1",
@@ -54,5 +55,8 @@
 		"build": "node runTasksInline.js",
 		"test": "node runTasks.js && node modules/makeSite/tasks/runTasksLevel2.js",
 		"cssInline": "node modules/makeSite/tasks/runTasksLevel2.js"
+	},
+	"devDependencies": {
+		"html-importer": "^0.1.3"
 	}
 }

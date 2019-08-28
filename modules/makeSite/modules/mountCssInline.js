@@ -6,6 +6,8 @@ var CleanCSS = require('clean-css');
 var minify = require('html-minifier').minify;
 const { inlineSource } = require('inline-source');
 const path = require('path');
+const htmlImporter = require('html-importer');
+// import htmlImporter from 'html-importer';
 
 module.exports.mountCssInline = async function (fileVar) {
     // const htmlpath = path.resolve('project/src/html/index.html');
@@ -43,7 +45,13 @@ module.exports.mountCssInline = async function (fileVar) {
 
     try {
 
-        var htmlMinify = await minify(fileVar.content, {
+        // console.log(htmlImported);
+        const srcPath = path.join(process.cwd(), fileVar.filePath);
+        var htmlImported = htmlImporter.parseHtml(fileVar.filePath);
+        console.log('teste: ', htmlImported);
+        
+
+        var htmlMinify = await minify(htmlImported, {
             caseSensitive: false,
             collapseBooleanAttributes: true,
             collapseInlineTagWhitespace: true,
