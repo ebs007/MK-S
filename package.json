@@ -27,7 +27,7 @@
 		"lazy-json": "^0.0.11",
 		"less": "^3.8.1",
 		"merge": "^1.2.0",
-		"node-sass": "^4.9.3",
+		"node-sass": "^4.13.1",
 		"node-sass-import": "^2.0.1",
 		"optimus-css": "^0.1.2",
 		"packagify-html": "^0.0.7",
