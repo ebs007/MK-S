@@ -11,7 +11,7 @@
 		"copy": "^0.3.2",
 		"css-b64-images": "^0.2.5",
 		"fs": "^0.0.1-security",
-		"fs-path": "^0.0.24",
+		"fs-path": "^0.0.25",
 		"htinliner": "^0.3.2",
 		"html-miner": "^1.2.1",
 		"html-minifier": "^3.5.20",
