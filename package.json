@@ -26,7 +26,7 @@
 		"inliner": "^1.13.1",
 		"lazy-json": "^0.0.11",
 		"less": "^3.8.1",
-		"merge": "^1.2.0",
+		"merge": "^2.1.1",
 		"node-sass": "^4.9.3",
 		"node-sass-import": "^2.0.1",
 		"optimus-css": "^0.1.2",
